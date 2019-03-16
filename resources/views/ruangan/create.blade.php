@@ -1,9 +1,9 @@
 @extends('template')
 @section('main')
-    <div id="barang">
-        <h2>Tambah Barang</h2>
-        {!! Form::open(['url'=>'barang']) !!}
-            @include('barang.form',['button'=>'Tambah Barang'])
+    <div id="ruangan">
+        <h2>Tambah Ruangan</h2>
+        {!! Form::open(['url'=>'ruangan']) !!}
+            @include('ruangan.form',['button'=>'Tambah Ruangan'])
         {!! Form::close() !!}
     </div>
 @stop

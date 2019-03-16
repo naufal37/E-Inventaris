@@ -23,13 +23,20 @@ Route::group(['middleware'=>['web']],function (){
     Route::get('barang/{id}/edit',"BarangController@edit");
     Route::patch('barang/{id}',"BarangController@update");
     Route::delete('barang/{id}',"BarangController@destroy");
+
 });
+
 route::get('tes-collection','BarangController@tesCollection');
 route::get('date-mutator','BarangController@dateMutator');
 
+Route::get('masuk', function () {return view('masuk/masuk');});
 
 
 
-Route::get('masuk', function () {
-    return view('masuk/masuk');
-});
+Route::get('ruangan', "RuanganController@index");
+Route::get('ruangan/tambah', "RuanganController@create");
+Route::post('ruangan', "RuanganController@store");
+Route::get('ruangan/{id}', "RuanganController@detail");
+Route::get('ruangan/{id}/edit',"RuanganController@edit");
+Route::patch('ruangan/{id}',"ruanganController@update");
+Route::delete('ruangan/{id}',"RuanganController@destroy");

@@ -2,23 +2,25 @@
 
 namespace App\Http\Controllers;
 
+use App\Ruangan;
 use Illuminate\Http\Request;
 use App\Barang;
 use Validator;
 
 class BarangController extends Controller
 {
-
-
     public function index(){
 
         $list_barang = Barang::orderBy('id','asc')->paginate(5);
+        $list_ruangan = Ruangan::all();
         $jumlah_barang = $list_barang->count();
-        return view('barang/barang',compact('list_barang','jumlah_barang'));
+        $jumlah_ruangan = $list_ruangan->count();
+        return view('barang/barang',compact('list_barang','jumlah_barang','jumlah_ruangan'));
     }
 
     public function create(){
-        return view('barang/create');
+//        $list_ruangan = Ruangan::lists('nama_ruangan','id');
+        return view('barang/create',compact('list_ruangan'));
     }
 
     public function store(Request $request){
@@ -59,6 +61,21 @@ class BarangController extends Controller
 
     public function update($id,Request $request){
         $barang = Barang::findOrFail($id);
+        $input = $request->all();
+
+        $validator = Validator::make($input,[
+            'nama_barang' => 'required|string|max:50|unique:barang,nama_barang, '.$request->input('id'),
+            'kondisi_barang' => 'required|string',
+            'jumlah'=>'required|string',
+            'kode_barang'=>'required|string|unique:barang,kode_barang, '.$request->input('id'),
+            'satuan'=>'required|string',
+            'jenis'=>'required|string',
+            'tanggal_masuk'=>'required|date',
+        ]);
+
+        if ($validator->fails()){
+            return redirect('barang/'.$id.'/edit')->withInput()->withErrors($validator);
+        }
         $barang->update($request->all());
         return redirect('barang/'.$barang->id);
     }

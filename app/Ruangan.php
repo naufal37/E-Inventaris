@@ -11,6 +11,6 @@ class Ruangan extends Model
 
         'nama_ruangan',
         'kode_ruangan',
-        'petugas',
+        'petugas_ruangan',
     ];
 }

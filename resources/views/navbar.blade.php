@@ -17,13 +17,13 @@
                     </li>
                 @endif
 
-                @if (!empty($halaman) && $halaman=='about')
+                @if (!empty($halaman) && $halaman=='ruangan')
                     <li class="nav-item active">
-                        <a class="nav-link" href="{{url('about')}}">About</a>
+                        <a class="nav-link" href="{{url('ruangan')}}">Ruangan</a>
                     </li>
                 @else
                     <li class="nav-item">
-                         <a class="nav-link" href="{{url('about')}}">About</a>
+                         <a class="nav-link" href="{{url('ruangan')}}">Ruangan</a>
                     </li>
                 @endif
             </ul>

@@ -1,3 +1,6 @@
+@if(isset($barang))
+    {!! Form::hidden('id', $barang->id) !!}
+@endif
 <div class="form-group">
     {!! Form::label('nama_barang','Nama Barang',['class'=>'control-label']) !!}
     @if($errors->any())
@@ -56,8 +59,12 @@
 
 {{--tak berisi--}}
 <div class="form-group">
-    <label for="ruangan" class="control-label">Ruangan</label>
-    {!! Form::select('barang', ['GDN' => 'Gudang 1', 'RPL' => 'Kajur RPL', 'TGB' => 'Kajur TGB']); !!}
+{{--    @foreach($list_ruangan as $ruangan=>$value)--}}
+        <label for="ruangan" class="control-label">Ruangan</label>
+{{--        {!! Form::select('barang', ['GDN' => 'Gudang 1', 'RPL' => 'Kajur RPL', 'TGB' => 'Kajur TGB']); !!}--}}
+{{--        {!! Form::select('id_ruangan', $list_ruangan, null,['class'=>'form-control', 'id'=>'id_ruangan', 'placeholder'=> 'Pilih Ruangan']); !!}--}}
+{{--        ['GDN' => 'Gudang 1', 'RPL' => 'Kajur RPL', 'TGB' => 'Kajur TGB'] --}}
+{{--    @endforeach--}}
 </div>
 {{--tak berisi--}}
 

@@ -4,7 +4,8 @@
         <h2>Tambah Barang</h2>
 {{--        {!! Form::open(['url'=>'barang/'.$barang->id.'/update','method'=>'PATCH']) !!}--}}
             {!! Form::model($barang,['method'=>'PATCH','action'=>['BarangController@update',$barang->id]]) !!}
-            @include('barang.form',['button'=>'Update Barang'])
+            @include('barang.form',['button'=>'Update Data'])
+
         {!! Form::close() !!}
     </div>
 @stop
