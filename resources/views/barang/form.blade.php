@@ -29,6 +29,20 @@
 </div>
 
 <div class="form-group">
+    {!! Form::label('suplier','Suplier',['class'=>'control-label']) !!}
+    @if($errors->any())
+        @if($errors->has('suplier'))
+            {!! Form::text('suplier',null,['class'=>'form-control is-invalid']) !!}
+            <span class="help-block">{{$errors->first('suplier')}}</span>
+        @else
+            {!! Form::text('suplier',null,['class'=>'form-control is-valid']) !!}
+        @endif
+    @else
+        {!! Form::text('suplier',null,['class'=>'form-control']) !!}
+    @endif
+</div>
+
+<div class="form-group">
     <label for="jumlah" class="control-label">Jumlah Barang</label>
     @if ($errors->any())
         @if($errors->has('jumlah'))

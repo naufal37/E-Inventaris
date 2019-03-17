@@ -27,4 +27,7 @@ class Barang extends Model
         return ucfirst($nama_barang);
     }
 
+    public function suplier(){
+        return $this->hasOne('App\Suplier','id_barang');
+    }
 };

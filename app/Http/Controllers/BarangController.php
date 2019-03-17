@@ -6,6 +6,7 @@ use App\Ruangan;
 use Illuminate\Http\Request;
 use App\Barang;
 use Validator;
+use App\Suplier;
 
 class BarangController extends Controller
 {
@@ -32,13 +33,21 @@ class BarangController extends Controller
             'kode_barang'=>'required|string|unique:barang,kode_barang',
             'satuan'=>'required|string',
             'jenis'=>'required|string',
+            'suplier'=>'sometimes',
             'tanggal_masuk'=>'required|date',
         ]);
 
         if ($validator->fails()){
             return redirect('barang/tambah')->withInput()->withErrors($validator);
         }
-        Barang::create($input);
+        $barang = Barang::create($input);
+
+        $suplier = new Suplier;
+
+        $suplier->suplier = $request->input('suplier');
+
+        $barang->suplier()->save($suplier);
+
         return redirect('barang');
 
     }
@@ -56,6 +65,7 @@ class BarangController extends Controller
 
     public function edit($id){
         $barang = Barang::findOrFail($id);
+        $barang->suplier = $barang->suplier->suplier;
         return view('barang.edit',compact('barang'));
     }
 
@@ -69,6 +79,7 @@ class BarangController extends Controller
             'jumlah'=>'required|string',
             'kode_barang'=>'required|string|unique:barang,kode_barang, '.$request->input('id'),
             'satuan'=>'required|string',
+            'suplier'=>'sometimes',
             'jenis'=>'required|string',
             'tanggal_masuk'=>'required|date',
         ]);
@@ -77,6 +88,11 @@ class BarangController extends Controller
             return redirect('barang/'.$id.'/edit')->withInput()->withErrors($validator);
         }
         $barang->update($request->all());
+
+        $suplier = $barang->suplier; //ini mencari table nya kemudian di deklarasi kan
+        $suplier->suplier = $request->input('suplier'); // ini mendeklarasikan kolom dari table yang sudah di deklarasikan di variabel atas kemudian menyimpannya
+        $barang->suplier()->save($suplier);
+
         return redirect('barang/'.$barang->id);
     }
 

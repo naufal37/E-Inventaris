@@ -29,6 +29,16 @@
                 <td>{{$detail->kode_barang}}</td>
             </tr>
             <tr>
+                <th> Suplier </th>
+                <td>
+                    @if(isset($detail->suplier->suplier))
+                        {{$detail->suplier->suplier}}
+                    @else
+                    -
+                    @endif
+                </td>
+            </tr>
+            <tr>
                 <th> Tanggal Masuk</th>
                 <td>{{$tanggal}}</td>
             </tr>

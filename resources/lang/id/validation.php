@@ -160,6 +160,10 @@ return [
             'string' => 'Satuan Barang Harus Berupa Karakter',
             'max' => 'Nama Barang Maksimal 30 Karakter',
         ],
+
+        'suplier'=>[
+            'string' => 'Suplier Barang Harus Berupa Karakter',
+        ],
         'jenis'=>[
             'required' => 'Anda Harus Memilih Jenis Barang',
             'string' => 'Jenis Barnag Harus Berupa Karakter',
