@@ -84,7 +84,8 @@
 
 <div class="form-group">
     <label for="jenis" class="control-label">Jenis Barang</label>
-    {!! Form::select('jenis', ['proyektor' => 'Proyektor', 'laptop' => 'Laptop', 'gelas' => 'Gelas']); !!}
+{{--    {!! Form::select('jenis', ['proyektor' => 'Proyektor', 'laptop' => 'Laptop', 'gelas' => 'Gelas']); !!}--}}
+        {!! Form::select('id_jenis',$list_jenis,null,['class'=>'form-control','id'=>'jenis_barang','placeholder'=>'Pilih Jenis Barang']) !!}
 </div>
 
 <div class="form-group">

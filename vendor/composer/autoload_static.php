@@ -452,6 +452,7 @@ class ComposerStaticInit49ae2a86e86e20af54306c9610ed7252
         'App\\Providers\\LaravelAppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/LaravelAppServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\Ruangan' => __DIR__ . '/../..' . '/app/Ruangan.php',
+        'App\\Suplier' => __DIR__ . '/../..' . '/app/Suplier.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
         'BeyondCode\\DumpServer\\DumpServerCommand' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/DumpServerCommand.php',
         'BeyondCode\\DumpServer\\DumpServerServiceProvider' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/DumpServerServiceProvider.php',

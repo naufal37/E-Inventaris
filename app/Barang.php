@@ -14,7 +14,7 @@ class Barang extends Model
         'jumlah',
         'kode_barang',
         'satuan',
-        'jenis',
+        'id_jenis',
         'tanggal_masuk',
         'keterangan',
         ];
@@ -29,5 +29,9 @@ class Barang extends Model
 
     public function suplier(){
         return $this->hasOne('App\Suplier','id_barang');
+    }
+
+    public function jenis(){
+        return $this->belongsTo('App\Jenis','id_jenis');
     }
 };

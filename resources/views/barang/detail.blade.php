@@ -22,7 +22,7 @@
             </tr>
             <tr>
                 <th> Jenis Produk</th>
-                <td>{{$detail->jenis}}</td>
+                <td>{{$detail->jenis->jenis_barang}}</td>
             </tr>
             <tr>
                 <th> Kode Barang</th>

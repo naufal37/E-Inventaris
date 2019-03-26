@@ -164,10 +164,8 @@ return [
         'suplier'=>[
             'string' => 'Suplier Barang Harus Berupa Karakter',
         ],
-        'jenis'=>[
+        'id_jenis'=>[
             'required' => 'Anda Harus Memilih Jenis Barang',
-            'string' => 'Jenis Barnag Harus Berupa Karakter',
-            'max' => 'Jenis Barang Maksimal 30 Karakter',
         ],
         'tanggal_masuk'=>[
             'required' => 'Anda Harus Mengisi Tanggal Masuk',
