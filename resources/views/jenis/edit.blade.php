@@ -1,11 +1,10 @@
 @extends('template')
 @section('main')
     <div id="ruangan">
-        <h2>Update Barang</h2>
+        <h2>Update Jenis Barang</h2>
 {{--        {!! Form::open(['url'=>'barang/'.$barang->id.'/update','method'=>'PATCH']) !!}--}}
-            {!! Form::model($ruangan,['method'=>'PATCH','action'=>['RuanganController@update',$ruangan->id]]) !!}
-
-        @include('ruangan.form',['button'=>'Update Data'])
+            {!! Form::model($jenis,['method'=>'PATCH','action'=>['JenisController@update',$jenis->id]]) !!}
+        @include('jenis.form',['button'=>'Update Data'])
         {!! Form::close() !!}
     </div>
 @stop

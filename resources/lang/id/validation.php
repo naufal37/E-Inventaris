@@ -4,17 +4,17 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Validation Language Lines
+    | Valkode_ruanganation Language Lines
     |--------------------------------------------------------------------------
     |
     | The following language lines contain the default error messages used by
-    | the validator class. Some of these rules have multiple versions such
+    | the valkode_ruanganator class. Some of these rules have multiple versions such
     | as the size rules. Feel free to tweak each of these messages here.
     |
     */
 
     'accepted' => 'The :attribute must be accepted.',
-    'active_url' => 'The :attribute is not a valid URL.',
+    'active_url' => 'The :attribute is not a valkode_ruangan URL.',
     'after' => 'The :attribute must be a date after :date.',
     'after_or_equal' => 'The :attribute must be a date after or equal to :date.',
     'alpha' => 'The :attribute may only contain letters.',
@@ -31,16 +31,16 @@ return [
     ],
     'boolean' => 'The :attribute field must be true or false.',
     'confirmed' => 'The :attribute confirmation does not match.',
-    'date' => 'The :attribute is not a valid date.',
+    'date' => 'The :attribute is not a valkode_ruangan date.',
     'date_equals' => 'The :attribute must be a date equal to :date.',
     'date_format' => 'The :attribute does not match the format :format.',
     'different' => 'The :attribute and :other must be different.',
     'digits' => 'The :attribute must be :digits digits.',
     'digits_between' => 'The :attribute must be between :min and :max digits.',
-    'dimensions' => 'The :attribute has invalid image dimensions.',
+    'dimensions' => 'The :attribute has invalkode_ruangan image dimensions.',
     'distinct' => 'The :attribute field has a duplicate value.',
-    'email' => 'The :attribute must be a valid email address.',
-    'exists' => 'The selected :attribute is invalid.',
+    'email' => 'The :attribute must be a valkode_ruangan email address.',
+    'exists' => 'The selected :attribute is invalkode_ruangan.',
     'file' => 'The :attribute must be a file.',
     'filled' => 'The :attribute field must have a value.',
     'gt' => [
@@ -56,13 +56,13 @@ return [
         'array' => 'The :attribute must have :value items or more.',
     ],
     'image' => 'The :attribute must be an image.',
-    'in' => 'The selected :attribute is invalid.',
+    'in' => 'The selected :attribute is invalkode_ruangan.',
     'in_array' => 'The :attribute field does not exist in :other.',
     'integer' => 'The :attribute must be an integer.',
-    'ip' => 'The :attribute must be a valid IP address.',
-    'ipv4' => 'The :attribute must be a valid IPv4 address.',
-    'ipv6' => 'The :attribute must be a valid IPv6 address.',
-    'json' => 'The :attribute must be a valid JSON string.',
+    'ip' => 'The :attribute must be a valkode_ruangan IP address.',
+    'ipv4' => 'The :attribute must be a valkode_ruangan IPv4 address.',
+    'ipv6' => 'The :attribute must be a valkode_ruangan IPv6 address.',
+    'json' => 'The :attribute must be a valkode_ruangan JSON string.',
     'lt' => [
         'numeric' => 'The :attribute must be less than :value.',
         'file' => 'The :attribute must be less than :value kilobytes.',
@@ -89,11 +89,11 @@ return [
         'string' => 'The :attribute must be at least :min characters.',
         'array' => 'The :attribute must have at least :min items.',
     ],
-    'not_in' => 'The selected :attribute is invalid.',
-    'not_regex' => 'The :attribute format is invalid.',
+    'not_in' => 'The selected :attribute is invalkode_ruangan.',
+    'not_regex' => 'The :attribute format is invalkode_ruangan.',
     'numeric' => 'The :attribute must be a number.',
     'present' => 'The :attribute field must be present.',
-    'regex' => 'The :attribute format is invalid.',
+    'regex' => 'The :attribute format is invalkode_ruangan.',
     'required' => 'Kolom :attribute Harus di isi.',
     'required_if' => 'The :attribute field is required when :other is :value.',
     'required_unless' => 'The :attribute field is required unless :other is in :values.',
@@ -110,18 +110,18 @@ return [
     ],
     'starts_with' => 'The :attribute must start with one of the following: :values',
     'string' => 'The :attribute must be a string.',
-    'timezone' => 'The :attribute must be a valid zone.',
+    'timezone' => 'The :attribute must be a valkode_ruangan zone.',
     'unique' => 'The :attribute has already been taken.',
     'uploaded' => 'The :attribute failed to upload.',
-    'url' => 'The :attribute format is invalid.',
-    'uuid' => 'The :attribute must be a valid UUID.',
+    'url' => 'The :attribute format is invalkode_ruangan.',
+    'uukode_ruangan' => 'The :attribute must be a valkode_ruangan UUkode_ruangan.',
 
     /*
     |--------------------------------------------------------------------------
-    | Custom Validation Language Lines
+    | Custom Valkode_ruanganation Language Lines
     |--------------------------------------------------------------------------
     |
-    | Here you may specify custom validation messages for attributes using the
+    | Here you may specify custom valkode_ruanganation messages for attributes using the
     | convention "attribute.rule" to name the lines. This makes it quick to
     | specify a specific custom language line for a given attribute rule.
     |
@@ -140,7 +140,6 @@ return [
         'kondisi_barang'=>[
             'required' => 'Anda Harus Memilih Kondisi Barang',
             'string' => 'Kondisi Barang Harus Berupa Karakter',
-            'max' => 'Nama Barang Maksimal 30 Karakter',
         ],
 
         'jumlah'=>[
@@ -152,31 +151,47 @@ return [
         'kode_barang'=>[
             'required' => 'Anda Harus Mengisi Kode Barang',
             'string' => 'Kode Barang Harus Berupa Karakter',
-            'max' => 'Kode Barang Maksimal 30 Karakter',
         ],
 
         'satuan'=>[
             'required' => 'Anda Harus Memilih Satuan Barang',
             'string' => 'Satuan Barang Harus Berupa Karakter',
-            'max' => 'Nama Barang Maksimal 30 Karakter',
         ],
 
         'suplier'=>[
             'string' => 'Suplier Barang Harus Berupa Karakter',
         ],
-        'id_jenis'=>[
+        'kode_ruangan_jenis'=>[
             'required' => 'Anda Harus Memilih Jenis Barang',
+        ],
+        'ruangan'=>[
+            'required' => 'Anda Harus Memilih Ruangan Barang',
         ],
         'tanggal_masuk'=>[
             'required' => 'Anda Harus Mengisi Tanggal Masuk',
             'date' => 'Tanggal Barang Harus Berupa Tanggal',
-            'max' => 'Nama Barang Maksimal 30 Karakter',
+        ],
+        'nama_ruangan'=>[
+            'required' => 'Anda Harus Mengisi Nama Ruangan',
+            'string' => 'Nama Ruangan Harus Berupa String',
+            'max' => 'Nama Ruangan Tidak Boleh Lebih Dari 50 Karakter',
+        ],
+        'kode_ruangan'=>[
+            'required' => 'Anda Harus Mengisi Kode Ruangan',
+            'string' => 'KodeRuangan Harus Berupa String',
+            'max' => 'Kode Ruangan Tidak Boleh Lebih Dari 50 Karakter',
+        ],
+        'petugas_ruangan'=>[
+            'required' => 'Anda Harus Memilih Kepala Petugas Ruangan',
+        ],
+        'lokasi'=>[
+            'required' => 'Anda Harus Memilih Lokasi Ruangan',
         ],
     ],
 
     /*
     |--------------------------------------------------------------------------
-    | Custom Validation Attributes
+    | Custom Valkode_ruanganation Attributes
     |--------------------------------------------------------------------------
     |
     | The following language lines are used to swap our attribute placeholder

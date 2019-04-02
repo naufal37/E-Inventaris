@@ -16,7 +16,7 @@
 </div>
 
 <div class="form-group">
-    {!! Form::label('statusbarang','Status Barang',['class'=>'control-label']) !!}
+    {!! Form::label('kondisi_barang','Status Barang',['class'=>'control-label']) !!}
     <div class="radio">
         <label>{!! Form::radio('kondisi_barang','Tersedia',true) !!} Tersedia </label>
     </div>
@@ -67,25 +67,47 @@
 </div>
 
 <div class="form-group">
-    <label for="satuanbarang" class="control-label">Satuan Barang</label>
-    {!! Form::select('satuan', ['kg' => 'KG', 'buah' => 'Buah', 'liter' => 'Liter']); !!}
+    <label for="satuan" class="control-label">Satuan Barang</label>
+    @if($errors->any())
+        @if($errors->has('satuan'))
+            {!! Form::select('id_satuan',$list_satuan,null,['class'=>'form-control is-invalid','id'=>'satuan','placeholder'=>'Pilih Satuan']) !!}
+        @else
+            {!! Form::select('id_satuan',$list_satuan,null,['class'=>'form-control is-valid','id'=>'satuan','placeholder'=>'Pilih Satuan']) !!}
+        @endif
+    @else
+        {!! Form::select('id_satuan',$list_satuan,null,['class'=>'form-control','id'=>'satuan','placeholder'=>'Pilih Satuan']) !!}
+    @endif
+
 </div>
 
-{{--tak berisi--}}
 <div class="form-group">
-{{--    @foreach($list_ruangan as $ruangan=>$value)--}}
         <label for="ruangan" class="control-label">Ruangan</label>
-{{--        {!! Form::select('barang', ['GDN' => 'Gudang 1', 'RPL' => 'Kajur RPL', 'TGB' => 'Kajur TGB']); !!}--}}
-{{--        {!! Form::select('id_ruangan', $list_ruangan, null,['class'=>'form-control', 'id'=>'id_ruangan', 'placeholder'=> 'Pilih Ruangan']); !!}--}}
-{{--        ['GDN' => 'Gudang 1', 'RPL' => 'Kajur RPL', 'TGB' => 'Kajur TGB'] --}}
-{{--    @endforeach--}}
+    @if($errors->any())
+        @if($errors->has('id_ruangan'))
+            {!! Form::select('id_ruangan',$list_ruangan,null,['class'=>'form-control is-invalid','id'=>'ruangan','placeholder'=>'Pilih Ruangan']) !!}
+            <span class="help-block">{{$errors->first('kode_ruangan')}}</span>
+        @else
+            {!! Form::select('id_ruangan',$list_ruangan,null,['class'=>'form-control is-valid','id'=>'ruangan','placeholder'=>'Pilih Ruangan']) !!}
+        @endif
+    @else
+        {!! Form::select('id_ruangan',$list_ruangan,null,['class'=>'form-control','id'=>'ruangan','placeholder'=>'Pilih Ruangan']) !!}
+    @endif
+
 </div>
-{{--tak berisi--}}
+
 
 <div class="form-group">
     <label for="jenis" class="control-label">Jenis Barang</label>
-{{--    {!! Form::select('jenis', ['proyektor' => 'Proyektor', 'laptop' => 'Laptop', 'gelas' => 'Gelas']); !!}--}}
+    @if ($errors->any())
+        @if($errors->has('id_jenis'))
+            {!! Form::select('id_jenis',$list_jenis,null,['class'=>'form-control is-invalid','id'=>'jenis_barang','placeholder'=>'Pilih Jenis Barang']) !!}
+            <span class="help-block">{{$errors->first('id_jenis')}}</span>
+        @else
+            {!! Form::select('id_jenis',$list_jenis,null,['class'=>'form-control is-valid','id'=>'jenis_barang','placeholder'=>'Pilih Jenis Barang']) !!}
+        @endif
+    @else
         {!! Form::select('id_jenis',$list_jenis,null,['class'=>'form-control','id'=>'jenis_barang','placeholder'=>'Pilih Jenis Barang']) !!}
+    @endif
 </div>
 
 <div class="form-group">

@@ -26,6 +26,26 @@
                          <a class="nav-link" href="{{url('ruangan')}}">Ruangan</a>
                     </li>
                 @endif
+
+                @if (!empty($halaman) && $halaman=='jenis')
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{url('jenis')}}">Jenis</a>
+                    </li>
+                @else
+                    <li class="nav-item">
+                         <a class="nav-link" href="{{url('jenis')}}">Jenis</a>
+                    </li>
+                @endif
+
+                @if (!empty($halaman) && $halaman=='satuan')
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{url('satuan')}}">Satuan</a>
+                    </li>
+                @else
+                    <li class="nav-item">
+                         <a class="nav-link" href="{{url('satuan')}}">Satuan</a>
+                    </li>
+                @endif
             </ul>
         </div>
     </nav>

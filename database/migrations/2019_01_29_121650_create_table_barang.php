@@ -19,9 +19,11 @@ class CreateTableBarang extends Migration
             $table->enum('kondisi_barang',['Tersedia','Rusak','Hilang']);
             $table->integer('jumlah');
             $table->integer('id_jenis')->unsigned();
+            $table->integer('id_ruangan')->unsigned();
             $table->string('kode_barang',10)->unique();
-            $table->string('satuan',10);
-//            $table->string('jenis',20);
+
+            $table->integer('id_satuan')->unsigned();
+
             $table->date('tanggal_masuk');
             $table->text('keterangan')->nullable(true);
 

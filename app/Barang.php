@@ -13,8 +13,9 @@ class Barang extends Model
         'kondisi_barang',
         'jumlah',
         'kode_barang',
-        'satuan',
+        'id_satuan',
         'id_jenis',
+        'id_ruangan',
         'tanggal_masuk',
         'keterangan',
         ];
@@ -27,11 +28,23 @@ class Barang extends Model
         return ucfirst($nama_barang);
     }
 
-    public function suplier(){
+    public function suplier()
+    {
         return $this->hasOne('App\Suplier','id_barang');
     }
 
-    public function jenis(){
+    public function jenis()
+    {
         return $this->belongsTo('App\Jenis','id_jenis');
+    }
+
+    public function ruangan()
+    {
+        return $this->belongsTo('App\Ruangan','id_ruangan');
+    }
+
+    public function satuan()
+    {
+        return $this->belongsTo('App\Satuan','id_satuan');
     }
 };

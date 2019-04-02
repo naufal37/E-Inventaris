@@ -22,7 +22,7 @@ class CreateTableJenis extends Migration
         Schema::table('barang',function (Blueprint $table){
             $table->foreign('id_jenis')
                 ->references('id')
-                ->on('barang')
+                ->on('jenis')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
 

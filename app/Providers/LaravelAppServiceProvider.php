@@ -21,6 +21,12 @@ class LaravelAppServiceProvider extends ServiceProvider
         if (Request::segment(1) == 'ruangan') {
             $halaman = 'ruangan';
         }
+        if (Request::segment(1) == 'jenis') {
+            $halaman = 'jenis';
+        }
+        if (Request::segment(1) == 'satuan') {
+            $halaman = 'satuan';
+        }
         view()->share('halaman', $halaman);
     }
 

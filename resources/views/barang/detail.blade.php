@@ -4,8 +4,8 @@
 
 @extends('template')
 @section('main')
-    <div id="produk">
-        <h2> Detail Produk</h2>
+    <div id="barang">
+        <h2> Detail Barang</h2>
 
         <table class="table table-striped">
             <tr>
@@ -18,7 +18,7 @@
             </tr>
             <tr>
                 <th> Jumlah Barang</th>
-                <td>{{$detail->jumlah}} {{$detail->satuan}}</td>
+                <td>{{$detail->jumlah}} {{$detail->satuan->satuan}}</td>
             </tr>
             <tr>
                 <th> Jenis Produk</th>
@@ -27,6 +27,10 @@
             <tr>
                 <th> Kode Barang</th>
                 <td>{{$detail->kode_barang}}</td>
+            </tr>
+            <tr>
+                <th> Ruangan </th>
+                <td>{{$detail->ruangan->nama_ruangan}}</td>
             </tr>
             <tr>
                 <th> Suplier </th>

@@ -7,18 +7,20 @@
         <table class="table">
             <thead>
             <tr>
-                <th>ID</th>
+{{--                <th>ID</th>--}}
                 <th>Nama Ruangan</th>
                 <th>Kode Ruangan</th>
+                <th>Lokasi Ruangan</th>
                 <th>Petugas</th>
             </tr>
             </thead>
             <tbody>
             @foreach($list_ruangan as $ruangan)
                 <tr>
-                <td>{{$ruangan->id}}</td>
+{{--                <td>{{$ruangan->id}}</td>--}}
                 <td>{{$ruangan->nama_ruangan}}</td>
                 <td>{{$ruangan->kode_ruangan}}</td>
+                <td>{{$ruangan->lokasi}}</td>
                 <td>{{$ruangan->petugas_ruangan}}</td>
                     {{--->format('d-m-Y')--}}
 

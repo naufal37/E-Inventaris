@@ -1,6 +1,19 @@
+@if(isset($ruangan))
+    {!! Form::hidden('id', $ruangan->id) !!}
+@endif
 <div class="form-group">
     {!! Form::label('nama_ruangan','Nama Ruangan',['class'=>'control-label']) !!}
-    {!! Form::text('nama_ruangan',null,['class'=>'form-control']) !!}
+    @if($errors->any())
+        @if($errors->has('nama_ruangan'))
+            {!! Form::text('nama_ruangan',null,['class'=>'form-control is-invalid']) !!}
+            <span class="help-block">{{$errors->first('nama_ruangan')}}</span>
+        @else
+            {!! Form::text('nama_ruangan',null,['class'=>'form-control is-valid']) !!}
+        @endif
+    @else
+        {!! Form::text('nama_ruangan',null,['class'=>'form-control']) !!}
+    @endif
+
 
 {{--    @if($errors->any())--}}
 {{--        @if($errors->has('nama_ruangan'))--}}
@@ -16,13 +29,51 @@
 
 <div class="form-group">
     {!! Form::label('kode_ruangan','Kode Ruangan',['class'=>'control-label']) !!}
-    {!! Form::text('kode_ruangan',null,['class'=>'form-control']) !!}
+    @if($errors->any())
+        @if($errors->has('kode_ruangan'))
+            {!! Form::text('kode_ruangan',null,['class'=>'form-control is-invalid']) !!}
+            <span class="help-block">{{$errors->first('kode_ruangan')}}</span>
+        @else
+            {!! Form::text('kode_ruangan',null,['class'=>'form-control is-valid']) !!}
+        @endif
+    @else
+        {!! Form::text('kode_ruangan',null,['class'=>'form-control']) !!}
+    @endif
+</div>
+
+<div class="form-group">
+    {!! Form::label('lokasi','Lokasi Ruangan',['class'=>'control-label']) !!}
+    @if($errors->any())
+        @if($errors->has('lokasi'))
+{{--            {!! Form::text('lokasi',null,['class'=>'form-control is-invalid']) !!}--}}
+            {!! Form::select('lokasi',['Kampus Depan'=>'Kampus Depan','Kampus Belakang'=>'Kampus Belakang'],null,['class'=>'form-control is-invalid','id'=>'jenis_barang','placeholder'=>'Pilih Lokasi Ruangan']) !!}
+            <span class="help-block">{{$errors->first('lokasi')}}</span>
+        @else
+{{--            {!! Form::text('lokasi',null,['class'=>'form-control is-valid']) !!}--}}
+            {!! Form::select('lokasi',['Kampus Depan'=>'Kampus Depan','Kampus Belakang'=>'Kampus Belakang'],null,['class'=>'form-control is-valid','id'=>'jenis_barang','placeholder'=>'Pilih Lokasi Ruangan']) !!}
+        @endif
+    @else
+{{--        {!! Form::text('lokasi',null,['class'=>'form-control']) !!}--}}
+        {!! Form::select('lokasi',['Kampus Depan'=>'Kampus Depan','Kampus Belakang'=>'Kampus Belakang'],null,['class'=>'form-control','id'=>'jenis_barang','placeholder'=>'Pilih Lokasi Ruangan']) !!}
+
+    @endif
 </div>
 
 <div class="form-group">
     {!! Form::label('petugas','Petugas Ruangan',['class'=>'control-label']) !!}
-    {!! Form::text('petugas_ruangan',null,['class'=>'form-control']) !!}
+    @if($errors->any())
+        @if($errors->has('petugas_ruangan'))
+            {!! Form::text('petugas_ruangan',null,['class'=>'form-control is-invalid']) !!}
+            <span class="help-block">{{$errors->first('petugas_ruangan')}}</span>
+        @else
+            {!! Form::text('petugas_ruangan',null,['class'=>'form-control is-valid']) !!}
+        @endif
+    @else
+        {!! Form::text('petugas_ruangan',null,['class'=>'form-control']) !!}
+    @endif
 </div>
+
+
 
 {{--<div class="form-group">--}}
 {{--    {!! Form::label('statusbarang','Status Barang',['class'=>'control-label']) !!}--}}

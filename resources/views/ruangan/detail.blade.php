@@ -17,6 +17,10 @@
                 <td>{{$detail->kode_ruangan}}</td>
             </tr>
             <tr>
+                <th> Lokasi Ruangan</th>
+                <td>{{$detail->lokasi}}</td>
+            </tr>
+            <tr>
                 <th> Petugas</th>
                 <td> {{$detail->petugas_ruangan}}</td>
             </tr>

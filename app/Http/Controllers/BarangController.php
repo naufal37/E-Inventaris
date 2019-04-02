@@ -3,17 +3,19 @@
 namespace App\Http\Controllers;
 
 use App\Ruangan;
+use App\Satuan;
 use Illuminate\Http\Request;
 use App\Barang;
 use Validator;
 use App\Suplier;
 use App\Jenis;
 
+
 class BarangController extends Controller
 {
     public function index(){
 
-        $list_barang = Barang::orderBy('id','asc')->paginate(5);
+        $list_barang = Barang::orderBy('nama_barang','asc')->paginate(5);
         $list_ruangan = Ruangan::all();
         $jumlah_barang = $list_barang->count();
         $jumlah_ruangan = $list_ruangan->count();
@@ -21,9 +23,10 @@ class BarangController extends Controller
     }
 
     public function create(){
-//        $list_ruangan = Ruangan::lists('nama_ruangan','id');
         $list_jenis = Jenis::pluck('jenis_barang','id');
-        return view('barang/create',compact('list_jenis'));
+        $list_ruangan = Ruangan::pluck('nama_ruangan','id');
+        $list_satuan = Satuan::pluck('satuan','id');
+        return view('barang/create',compact('list_jenis','list_ruangan','list_satuan'));
     }
 
     public function store(Request $request){
@@ -33,9 +36,10 @@ class BarangController extends Controller
             'kondisi_barang' => 'required|string',
             'jumlah'=>'required|string',
             'kode_barang'=>'required|string|unique:barang,kode_barang',
-            'satuan'=>'required|string',
+            'id_satuan'=>'required|string',
             'id_jenis'=>'required',
-            'suplier'=>'sometimes',
+            'id_ruangan'=>'required',
+            'suplier'=>'nullable|string|min:2',
             'tanggal_masuk'=>'required|date',
         ]);
 
@@ -52,7 +56,7 @@ class BarangController extends Controller
     public function detail($id){
         $detail = Barang::findOrFail($id);
         $tanggal = $this->tanggal($detail->tanggal_masuk->format('d-m-Y'));
-        return view('barang.detail',compact('detail','tanggal'));
+        return view('barang.detail',compact("detail",'tanggal'));
     }
 
     public function tanggal($tanggal){
@@ -64,8 +68,10 @@ class BarangController extends Controller
     public function edit($id){
         $barang = Barang::findOrFail($id);
         $barang->suplier = $barang->suplier->suplier;
-//        $list_jenis = Jenis::pluck('jenis_barang','id');
-        return view('barang.edit',compact('barang','list_jenis'));
+        $list_jenis = Jenis::pluck('jenis_barang','id');
+        $list_ruangan = Ruangan::pluck('nama_ruangan','id');
+        $list_satuan = Satuan::pluck('satuan','id');
+        return view('barang.edit',compact('barang','list_jenis','list_ruangan','list_satuan'));
     }
 
     public function update($id,Request $request){
@@ -77,9 +83,10 @@ class BarangController extends Controller
             'kondisi_barang' => 'required|string',
             'jumlah'=>'required|string',
             'kode_barang'=>'required|string|unique:barang,kode_barang, '.$request->input('id'),
-            'satuan'=>'required|string',
+            'id_satuan'=>'required|string',
             'suplier'=>'sometimes',
             'id_jenis'=>'required',
+            'id_ruangan'=>'required',
             'tanggal_masuk'=>'required|date',
         ]);
 
