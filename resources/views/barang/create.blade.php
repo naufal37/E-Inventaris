@@ -2,7 +2,7 @@
 @section('main')
     <div id="barang">
         <h2>Tambah Barang</h2>
-        {!! Form::open(['url'=>'barang']) !!}
+        {!! Form::open(['url'=>'barang','files'=>'true']) !!}
             @include('barang.form',['button'=>'Tambah Barang'])
         {!! Form::close() !!}
     </div>

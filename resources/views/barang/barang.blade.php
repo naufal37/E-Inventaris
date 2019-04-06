@@ -1,8 +1,9 @@
 @extends('template')
 @section('main')
-<div class="produk">
+<div class="barang">
     <h2> Daftar Barang </h2>
-
+    @include('barang.search')
+    @include('_partial.flash_message')
     @if ($jumlah_barang!=0)
         <table class="table">
             <thead>
@@ -56,7 +57,7 @@
 
     <div class="bottom-nav">
         <div>
-            <a href="barang/tambah" class="btn btn-primary">Tambah<Produk></Produk></a>
+            {{link_to('barang/create','Tambah Barang',['class'=>'btn btn-success btn-sm'])}}
         </div>
     </div>
 

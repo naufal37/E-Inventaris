@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Satuan;
 use Illuminate\Http\Request;
 use Validator;
+use Illuminate\Support\Facades\Session;
 
 class SatuanController extends Controller
 {
@@ -15,9 +16,9 @@ class SatuanController extends Controller
      */
     public function index()
     {
-        $list_satuan = Satuan::orderBy('satuan','ASC')->paginate(5);
-        $jumlah_satuan = $list_satuan->count();
-        return view('satuan.satuan',compact('list_satuan','jumlah_satuan'));
+//        $list_satuan = Satuan::orderBy('satuan','ASC')->paginate(5);
+//        $jumlah_satuan = $list_satuan->count();
+        return view('satuan.satuan');
     }
 
     /**
@@ -39,13 +40,12 @@ class SatuanController extends Controller
     public function store(Request $request)
     {
         $input = $request->all();
-        $validator = Validator::make($input,[
+        $this->validate($request,[
             'satuan'=>'required|string',
         ]);
-        if($validator->fails()){
-            return redirect('satuan/tambah')->withErrors($validator)->withInput();
-        }
-        $satuan = Satuan::create($input);
+        Satuan::create($input);
+        Session::flash('flash_message','Satuan Telah Berhasil Di Tambah!');
+
         return redirect('satuan');
 
     }
@@ -56,7 +56,7 @@ class SatuanController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function detail($id)
+    public function show($id)
     {
         $detail = Satuan::findOrFail($id);
         return view('satuan.detail',compact('detail'));
@@ -87,13 +87,13 @@ class SatuanController extends Controller
         $satuan = Satuan::findOrFail($id);
         $input = $request->all();
 
-        $validator = Validator::make($input,[
+        $this->validate($request,[
             'satuan'=>'required|string|unique:satuan,satuan, '.$request->input('id'),
         ]);
-        if($validator->fails()){
-            return redirect('satuan/'.$id.'/edit')->withErrors($validator)->withInput();
-        }
+
         $satuan->update($input);
+        Session::flash('flash_message','Satuan Telah Berhasil Di Edit!');
+        Session::flash('edit',true);
         return redirect('satuan');
     }
 
@@ -107,6 +107,8 @@ class SatuanController extends Controller
     {
         $satuan = Satuan::findOrFail($id);
         $satuan->delete();
+        Session::flash('flash_message','Satuan Telah Berhasil Di Hapus!');
+        Session::flash('hapus',true);
         return redirect('satuan');
     }
 }

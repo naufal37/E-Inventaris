@@ -158,6 +158,11 @@ return [
             'string' => 'Satuan Barang Harus Berupa Karakter',
         ],
 
+        'id_satuan'=>[
+            'required' => 'Anda Harus Memilih Satuan Barang',
+            'string' => 'Satuan Barang Harus Berupa Karakter',
+        ],
+
         'suplier'=>[
             'string' => 'Suplier Barang Harus Berupa Karakter',
         ],
@@ -186,6 +191,12 @@ return [
         ],
         'lokasi'=>[
             'required' => 'Anda Harus Memilih Lokasi Ruangan',
+        ],
+        'foto'=>[
+            'image' =>'Anda Hanya Dapat Mengupload Gambar',
+            'max' =>'Ukuran Maksimal Gambar 1 MB',
+            'mimes' =>'Extensi Gambar Hanya Boleh Berbentuk *.jpg *.png *.jpeg',
+            //nullable|image|max:1000|mimes:jpeg,jpg,png
         ],
     ],
 

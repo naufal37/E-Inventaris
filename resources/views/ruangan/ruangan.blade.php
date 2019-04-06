@@ -2,7 +2,8 @@
 @section('main')
 <div class="produk">
     <h2> Daftar Ruangan </h2>
-
+    @include('ruangan.search')
+    @include('_partial.flash_message')
     @if ($jumlah_ruangan!=0)
         <table class="table">
             <thead>
@@ -57,7 +58,7 @@
 
     <div class="bottom-nav">
         <div>
-            <a href="ruangan/tambah" class="btn btn-primary">Tambah<Produk></Produk></a>
+            <a href="{{url('ruangan/create')}}" class="btn btn-primary">Tambah<Produk></Produk></a>
         </div>
     </div>
 

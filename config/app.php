@@ -176,6 +176,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\LaravelAppServiceProvider::class,
+        App\Providers\FormBarangServiceProvider::class,
+        App\Providers\FormRuanganServiceProvider::class,
+        App\Providers\FormSatuanServiceProvider::class,
+        App\Providers\FormJenisServiceProvider::class,
 
     ],
 

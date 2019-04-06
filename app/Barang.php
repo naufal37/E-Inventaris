@@ -18,6 +18,7 @@ class Barang extends Model
         'id_ruangan',
         'tanggal_masuk',
         'keterangan',
+        'foto',
         ];
     public $dates = [
         'tanggal_masuk',
@@ -26,6 +27,16 @@ class Barang extends Model
     public function getNamaBarangAttribute($nama_barang)
     {
         return ucfirst($nama_barang);
+    }
+
+    public function scopeRuangan($query, $id_ruangan)
+    {
+        return $query->where('id_ruangan',$id_ruangan);
+    }
+
+    public function scopeJenis($query, $id_jenis)
+    {
+        return $query->where('id_jenis',$id_jenis);
     }
 
     public function suplier()

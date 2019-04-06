@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Providers;
-
+//namespace App;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+use App\Barang;
 
 class RouteServiceProvider extends ServiceProvider
 {
@@ -26,6 +27,7 @@ class RouteServiceProvider extends ServiceProvider
         //
 
         parent::boot();
+//        $router->model('barang','App\Barang');
     }
 
     /**

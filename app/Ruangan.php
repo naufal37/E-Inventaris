@@ -11,6 +11,11 @@ class Ruangan extends Model
         'id','nama_ruangan','kode_ruangan','lokasi','petugas_ruangan'
     ];
 
+    public function scopeLokasi($query,$lokasi)
+    {
+        return $query->where('lokasi',$lokasi);
+    }
+
     public function barang(){
         return $this->hasMany('App\Barang','id_ruangan');
     }

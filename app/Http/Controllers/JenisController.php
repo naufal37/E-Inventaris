@@ -5,14 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Validator;
 use App\Jenis;
+use Illuminate\Support\Facades\Session;
 
 class JenisController extends Controller
 
 {
     public function index(){
-        $list_jenis = Jenis::orderBy('jenis_barang','desc')->Paginate(5);
-        $jumlah_jenis = $list_jenis->count();
-        return view('jenis.jenis',compact('list_jenis','jumlah_jenis'));
+        return view('jenis.jenis');
     }
 
     public function create(){
@@ -21,17 +20,16 @@ class JenisController extends Controller
 
     public function store(Request $request){
         $input = $request->all();
-        $validator = Validator::make($input,[
+        $this->validate($request,[
             'jenis_barang'=>'required|string|unique:jenis,jenis_barang, '.$request->input('id'),
         ]);
-        if ($validator->fails()){
-            return redirect('jenis/tambah')->withInput()->withErrors($validator);
-        }
         Jenis::create($input);
+        Session::flash('flash_message','Jenis Telah Berhasil Di Tambahkan!');
+
         return redirect('jenis');
     }
 
-    public function detail($id){
+    public function show($id){
         $detail = Jenis::findOrFail($id);
         return view('jenis.detail', compact('detail'));
     }
@@ -42,22 +40,22 @@ class JenisController extends Controller
     }
     public function update($id,Request $request){
         $jenis = Jenis::findOrFail($id);
-        $input = $request->all();
-        $validator = Validator::make($input,[
+        $this->validate($request,[
             'jenis_barang'=>'required|string|unique:jenis,jenis_barang, '.$request->input('id'),
         ]);
-        if ($validator->fails()){
-            return redirect('jenis/'.$id.'/edit')->withInput()->withErrors($validator);
-        }
-        else
-            $jenis->update($request->all());
-        return redirect('jenis/'.$jenis->id);
+        $jenis->update($request->all());
+
+        Session::flash('flash_message','Jenis Telah Berhasil Di Edit!');
+        Session::flash('edit',true);
+        return redirect('jenis');
     }
 
 
     public function destroy($id){
         $jenis = Jenis::findOrFail($id);
         $jenis->delete();
+        Session::flash('flash_message','Jenis Telah Berhasil Di Hapus!');
+        Session::flash('hapus',true);
         return redirect('jenis');
     }
 

@@ -1,5 +1,6 @@
 @if(isset($barang))
     {!! Form::hidden('id', $barang->id) !!}
+    {!! Form::hidden('foto', $barang->foto) !!}
 @endif
 <div class="form-group">
     {!! Form::label('nama_barang','Nama Barang',['class'=>'control-label']) !!}
@@ -58,9 +59,13 @@
 
 <div class="form-group">
     <label for="kodebarang" class="control-label">Kode Barang</label>
-    @if($errors->has('kode_barang'))
-        {!! Form::text('kode_barang',null,['class'=>'form-control is-invalid']) !!}
-        <span class="help-block">{{$errors->first('kode_barang')}}</span>
+    @if($errors->any())
+        @if($errors->has('kode_barang'))
+            {!! Form::text('kode_barang',null,['class'=>'form-control is-invalid']) !!}
+            <span class="help-block">{{$errors->first('kode_barang')}}</span>
+        @else
+            {!! Form::text('kode_barang',null,['class'=>'form-control is-valid']) !!}
+        @endif
     @else
         {!! Form::text('kode_barang',null,['class'=>'form-control']) !!}
     @endif
@@ -69,8 +74,9 @@
 <div class="form-group">
     <label for="satuan" class="control-label">Satuan Barang</label>
     @if($errors->any())
-        @if($errors->has('satuan'))
+        @if($errors->has('id_satuan'))
             {!! Form::select('id_satuan',$list_satuan,null,['class'=>'form-control is-invalid','id'=>'satuan','placeholder'=>'Pilih Satuan']) !!}
+            <span class="help-block">{{$errors->first('id_satuan')}}</span>
         @else
             {!! Form::select('id_satuan',$list_satuan,null,['class'=>'form-control is-valid','id'=>'satuan','placeholder'=>'Pilih Satuan']) !!}
         @endif
@@ -128,6 +134,22 @@
     {!! Form::label('keterangan','Keterangan',['class'=>'control-label']) !!}
     {!! Form::text('keterangan',null,['class'=>'form-control']) !!}
 </div>
+
+{{--<div class="form-group">--}}
+{{--    {!! Form::label('foto','Upload Foto',['class'=>'control-label']) !!}--}}
+{{--    @if($errors->any())--}}
+{{--        @if($errors->has('foto'))--}}
+{{--            {!! Form::file('foto')!!}--}}
+{{--            <span class="help-block">{{$errors->first('foto')}}</span>--}}
+{{--        @else--}}
+{{--            {!! Form::file('foto')!!}--}}
+{{--            <span class="help-block">Sukses!</span>--}}
+{{--        @endif--}}
+{{--    @else--}}
+{{--        {!! Form::file('foto')!!}--}}
+{{--    @endif--}}
+{{--</div>--}}
+
 
 <div class="form-group">
     {!! Form::submit($button,['class'=>'btn btn-primary form-control']) !!}

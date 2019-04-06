@@ -26,6 +26,7 @@ class CreateTableBarang extends Migration
 
             $table->date('tanggal_masuk');
             $table->text('keterangan')->nullable(true);
+            $table->string('foto')->nullable();
 
             $table->timestamps();
         });

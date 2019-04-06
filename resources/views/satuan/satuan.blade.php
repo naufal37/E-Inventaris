@@ -2,7 +2,7 @@
 @section('main')
 <div class="produk">
     <h2> Daftar satuan Barang </h2>
-
+    @include('_partial.flash_message')
     @if ($jumlah_satuan!=0)
         <table class="table">
             <thead>
@@ -45,7 +45,7 @@
 
     <div class="bottom-nav">
         <div>
-            <a href="satuan/tambah" class="btn btn-primary">Tambah<Produk></Produk></a>
+            <a href="satuan/create" class="btn btn-primary">Tambah<Produk></Produk></a>
         </div>
     </div>
 

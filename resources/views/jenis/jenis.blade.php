@@ -2,6 +2,7 @@
 @section('main')
 <div class="produk">
     <h2> Daftar Jenis Barang </h2>
+    @include('_partial.flash_message')
 
     @if ($jumlah_jenis!=0)
         <table class="table">
@@ -45,7 +46,7 @@
 
     <div class="bottom-nav">
         <div>
-            <a href="jenis/tambah" class="btn btn-primary">Tambah<Produk></Produk></a>
+            <a href="jenis/create" class="btn btn-primary">Tambah<Produk></Produk></a>
         </div>
     </div>
 
