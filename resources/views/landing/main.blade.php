@@ -60,8 +60,12 @@
                       <li><a href="#home" class="scroll">Beranda</a></li>
                       <li><a href="#additional" class="scroll">Fitur</a></li>
                       <li><a href="#contact" class="scroll">Kontak</a></li>
-                      <li><a href="#panel_admin" class="scroll">Login</a></li>
-                  </ul>
+                      @if(Auth::check())
+                        <li><a href="{{url('logout')}}" class="scroll">{{\Illuminate\Support\Facades\Auth::user()->name}}</a></li>
+                      @else
+                         <li><a href="#panel_admin" class="scroll">Login</a></li>
+                      @endif
+                      </ul>
                     </nav>
                     <!-- End Navigation Menu -->
                 </div>
@@ -203,7 +207,7 @@
                 <!-- Subscribe Row Begins -->
                 <div class="row">
                     <div class="col-md-12 animated text-center" data-animation="fadeInUp" data-animation-delay="300">
-                        <button type="button" class="btn bg-inverse btn-lg" data-loading-text="Loading..." onclick="window.location.href='{{url('/masuk')}}'">Masuk</button>
+                        <button type="button" class="btn bg-inverse btn-lg" data-loading-text="Loading..." onclick="window.location.href='{{url('/login')}}'">Masuk</button>
                         {{--<a href="{{url('/masuk')}}" class="btn bg-inverse btn-lg" data-loading-text="Loading...">Login</a>--}}
 
                     </div>

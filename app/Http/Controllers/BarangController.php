@@ -17,6 +17,11 @@ use Illuminate\Support\Facades\Session;
 
 class BarangController extends Controller
 {
+    public function __construct(){
+        $this->middleware('auth',['except'=>
+            ['index','cari','show']
+        ]);
+    }
     public function index(){
         $list_barang = Barang::orderBy('nama_barang','asc')->paginate(2);
         $jumlah_barang = Barang::all()->count();

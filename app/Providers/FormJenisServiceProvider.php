@@ -15,6 +15,7 @@ class FormJenisServiceProvider extends ServiceProvider
     public function boot()
     {
         view()->composer('jenis/jenis',function($view) {
+            $view->with('i',1);
             $view->with('list_jenis',Jenis::orderBy('jenis_barang', 'desc')->Paginate(5));
             $view->with('jumlah_jenis',Jenis::all()->count());
         });

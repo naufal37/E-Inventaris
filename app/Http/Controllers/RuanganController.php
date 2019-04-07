@@ -10,6 +10,9 @@ use Illuminate\Support\Facades\Session;
 
 class RuanganController extends Controller
 {
+    public function __construct(){
+        $this->middleware('auth');
+    }
     public function index(){
         $list_ruangan = Ruangan::orderBy('nama_ruangan','desc')->Paginate(1);
         $jumlah_ruangan= Ruangan::all()->count();

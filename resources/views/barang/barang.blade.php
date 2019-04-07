@@ -15,16 +15,13 @@
             </tr>
             </thead>
             <tbody>
-            @foreach($list_barang as $barang)
+                @foreach($list_barang as $barang)
                 <tr>
                 <td>{{$barang->id}}</td>
                 <td>{{$barang->nama_barang}}</td>
                 <td>{{$barang->kondisi_barang}}</td>
-                    {{--->format('d-m-Y')--}}
-
-                {{--<td>@if (!empty($produk->bonus->bonus)) {{$produk->bonus->bonus}} @else - @endif</td>--}}
-                {{--<td>{{$barang->bonus->bonus}}</td>--}}
-                <td>
+                @if(Auth::check() && Auth::User()->level=='admin')
+                    <td>
                     <div class="box-button">
                         {{link_to('barang/'.$barang->id,'Detail',['class'=>'btn btn-success btn-sm'])}}
                     </div>
@@ -36,7 +33,14 @@
                         {!! Form::submit('Delete',['class'=>'btn btn-danger btn-sm']) !!}
                         {!! Form::close() !!}
                     </div>
-                </td>
+                    </td>
+                        @else
+                        <td>
+                            <div class="box-button">
+                                {{link_to('barang/'.$barang->id,'Detail',['class'=>'btn btn-success btn-sm'])}}
+                            </div>
+                        </td>
+                    @endif
                 </tr>
             @endforeach
             </tbody>
@@ -54,12 +58,13 @@
             {{$list_barang->links()}}
         </div>
     </div>
-
-    <div class="bottom-nav">
-        <div>
-            {{link_to('barang/create','Tambah Barang',['class'=>'btn btn-success btn-sm'])}}
+    @if(Auth::check() && Auth::User()->level=='admin')
+        <div class="bottom-nav">
+            <div>
+                {{link_to('barang/create','Tambah Barang',['class'=>'btn btn-success btn-sm'])}}
+            </div>
         </div>
-    </div>
+    @endif
 
 </div>
 @stop

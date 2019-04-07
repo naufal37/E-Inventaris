@@ -16,34 +16,61 @@
                         <a class="nav-link" href="{{url('barang')}}"> Barang <span class="sr-only"></span></a>
                     </li>
                 @endif
+                    @if(Auth::check())
+                        @if (!empty($halaman) && $halaman=='ruangan')
+                            <li class="nav-item active">
+                                <a class="nav-link" href="{{url('ruangan')}}">Ruangan</a>
+                            </li>
+                        @else
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{url('ruangan')}}">Ruangan</a>
+                            </li>
+                        @endif
+                    @endif
 
-                @if (!empty($halaman) && $halaman=='ruangan')
-                    <li class="nav-item active">
-                        <a class="nav-link" href="{{url('ruangan')}}">Ruangan</a>
+                    @if(Auth::check())
+                        @if (!empty($halaman) && $halaman=='jenis')
+                            <li class="nav-item active">
+                                <a class="nav-link" href="{{url('jenis')}}">Jenis</a>
+                            </li>
+                        @else
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{url('jenis')}}">Jenis</a>
+                        </li>
+                        @endif
+                    @endif
+
+                    @if(Auth::check())
+                        @if (!empty($halaman) && $halaman=='satuan')
+                            <li class="nav-item active">
+                                <a class="nav-link" href="{{url('satuan')}}">Satuan</a>
+                            </li>
+                        @else
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{url('satuan')}}">Satuan</a>
+                            </li>
+                        @endif
+                    @endif
+
+                    @if(Auth::check() && Auth::User()->level=='admin')
+                        @if (!empty($halaman) && $halaman=='pengguna')
+                            <li class="nav-item active">
+                                <a class="nav-link" href="{{url('pengguna')}}">Pengguna</a>
+                            </li>
+                        @else
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{url('pengguna')}}">Pengguna</a>
+                            </li>
+                        @endif
+                    @endif
+
+                @if(Auth::check())
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url('logout')}}">{{Auth::user()->name}}</a>
                     </li>
                 @else
                     <li class="nav-item">
-                         <a class="nav-link" href="{{url('ruangan')}}">Ruangan</a>
-                    </li>
-                @endif
-
-                @if (!empty($halaman) && $halaman=='jenis')
-                    <li class="nav-item active">
-                        <a class="nav-link" href="{{url('jenis')}}">Jenis</a>
-                    </li>
-                @else
-                    <li class="nav-item">
-                         <a class="nav-link" href="{{url('jenis')}}">Jenis</a>
-                    </li>
-                @endif
-
-                @if (!empty($halaman) && $halaman=='satuan')
-                    <li class="nav-item active">
-                        <a class="nav-link" href="{{url('satuan')}}">Satuan</a>
-                    </li>
-                @else
-                    <li class="nav-item">
-                         <a class="nav-link" href="{{url('satuan')}}">Satuan</a>
+                        <a class="nav-link" href="{{url('login')}}">Masuk</a>
                     </li>
                 @endif
             </ul>
