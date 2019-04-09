@@ -16,7 +16,7 @@ class CreateTableBarang extends Migration
         Schema::create('barang', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nama_barang',50);
-            $table->enum('kondisi_barang',['Tersedia','Rusak','Hilang']);
+            $table->enum('kondisi_barang',['Tersedia','Rusak','Hilang','Habis']);
             $table->integer('jumlah');
             $table->integer('id_jenis')->unsigned();
             $table->integer('id_ruangan')->unsigned();
@@ -24,7 +24,7 @@ class CreateTableBarang extends Migration
 
             $table->integer('id_satuan')->unsigned();
 
-            $table->date('tanggal_masuk');
+            $table->date('tanggal_masuk')->nullable();
             $table->text('keterangan')->nullable(true);
             $table->string('foto')->nullable();
 

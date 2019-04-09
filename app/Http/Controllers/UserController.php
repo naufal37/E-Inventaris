@@ -126,6 +126,7 @@ class UserController extends Controller
 
         Session::flash('flash_message','Data Pengguna Berhasil DiEdit!');
         Session::flash('edit',true);
+
         return redirect('pengguna');
     }
 

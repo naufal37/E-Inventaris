@@ -26,9 +26,7 @@ class FormBarangServiceProvider extends ServiceProvider
         });
         view()->composer('barang/barang',function ($view)
         {
-//            $view->with('list_barang',Barang::orderBy('nama_barang','asc')->paginate(1));
             $view->with('list_ruangan',Ruangan::all());
-//            $view->with('jumlah_barang',Barang::all()->count());
             $view->with('jumlah_ruangan',Ruangan::all()->count());
         });
 

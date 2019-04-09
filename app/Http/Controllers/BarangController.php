@@ -13,14 +13,14 @@ use App\Suplier;
 use App\Jenis;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Session;
-
+use Illuminate\Support\Facades\Auth;
 
 class BarangController extends Controller
 {
     public function __construct(){
-        $this->middleware('auth',['except'=>
-            ['index','cari','show']
-        ]);
+        $this->middleware('auth',['except'=>['index','cari','show']]);
+        $this->middleware('admin',['except'=>['index','cari','show']]);
+
     }
     public function index(){
         $list_barang = Barang::orderBy('nama_barang','asc')->paginate(2);
@@ -73,9 +73,12 @@ class BarangController extends Controller
         return redirect('barang');
 
     }
-    public function show($id){
-        $detail = Barang::findOrFail($id);
+    public function show($barang){
+        $detail = Barang::findOrFail($barang);
         $tanggal = $this->tanggal($detail->tanggal_masuk->format('d-m-Y'));
+        if($detail->jumlah<1) {
+            $detail->update(['kondisi_barang'=>'Habis']);
+        }
         return view('barang.detail',compact("detail","tanggal"));
     }
 
@@ -87,8 +90,6 @@ class BarangController extends Controller
 
     public function edit($id){
         $barang = Barang::findOrFail($id);
-//        dd($barang);
-//        return $barang;
         $barang->suplier = $barang->suplier->suplier;
         return view('barang.edit',compact('barang'));
     }
@@ -148,7 +149,8 @@ class BarangController extends Controller
         $id_jenis = $request->input('id_jenis');
 
             //Query Mencarinya
-            $query = Barang::where('nama_barang', 'like', '%' . $kata_kunci . '%')->orWhere('keterangan', 'like', '%' . $kata_kunci . '%');
+            $query = Barang::where('nama_barang', 'Blody');
+
             //jika ada ruangan,tambahkan query ruangan,jika tidak ada,berikan null
             (!empty($id_ruangan)) ? $query->Ruangan($id_ruangan) : '';
 
@@ -163,32 +165,18 @@ class BarangController extends Controller
             $pagination_ruangan = (!empty($id_ruangan)) ? $list_barang->appends(['id_ruangan' => $id_ruangan]) : '';
             $pagination_jenis = (!empty($id_jenis)) ? $list_barang->appends(['id_jenis' => $id_jenis]) : '';
             $pagination = $list_barang->appends(['kata_kunci' => $kata_kunci]);
+
             $jumlah_barang = $list_barang->count();
             return view('barang/barang', compact('list_barang', 'pagination', 'pagination_ruangan', 'pagination_jenis', 'jumlah_barang', 'kata_kunci', 'id_jenis', 'id_ruangan'));
 
 
     }
 
-
-
-//            {$list_barang->appends(['id_ruangan'=>$id_ruangan]);};
-//            else{'';}
-
-//            $pagination = if(!empty($id_ruangan)){$list_barang->appends(['id_ruangan'=>$id_ruangan]);}
-//            else{'';}
-
-
-
-
-//        $query = Barang::where('id_ruangan','like','%'.$kata_kunci.'%')->orWhere('id_ruangan','like','%'.$kata_kunci.'%')->orWhere('id_jenis','like','%'.$kata_kunci.'%');
-//        $list_barang = $query->paginate(2);
-//        $pagination = $list_barang->appends($request->except('page'));
-//        $list_ruangan = Ruangan::pluck('nama_ruangan','id');
-
-//        dd($list_barang);
-
-
-    public function tesCollection(){
+    public function test(){
+//        $query = Barang::where('nama_barang','Bloody');
+//        $paging = $query->paginate(1);
+//        $pagina = $paging->appends(['nama_barang'=>'Bloody']);
+//        dd($pagina);
     }
 
     public function dateMutator(){

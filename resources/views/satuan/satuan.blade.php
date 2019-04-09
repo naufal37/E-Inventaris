@@ -7,17 +7,23 @@
         <table class="table">
             <thead>
             <tr>
+                <th>Nomer</th>
                 <th>Satuan</th>
+                <th>Aksi</th>
             </tr>
             </thead>
             <tbody>
+            <?php $i = 1;?>
             @foreach($list_satuan as $satuan)
                 <tr>
+                <td>{{$i++}}</td>
                 <td>{{$satuan->satuan}}</td>
                 <td>
-                    <div class="box-button">
+
+                        <div class="box-button">
                         {{link_to('satuan/'.$satuan->id,'Detail',['class'=>'btn btn-success btn-sm'])}}
                     </div>
+                    @if(Auth::check() && Auth::User()->level=='admin')
                     <div class="box-button">
                         {{link_to('satuan/'.$satuan->id.'/edit','Edit',['class'=>'btn btn-warning btn-sm'])}}
                     </div>
@@ -26,6 +32,7 @@
                         {!! Form::submit('Delete',['class'=>'btn btn-danger btn-sm']) !!}
                         {!! Form::close() !!}
                     </div>
+                    @endif
                 </td>
                 </tr>
             @endforeach
@@ -42,12 +49,13 @@
             {{$list_satuan->links()}}
         </div>
     </div>
-
-    <div class="bottom-nav">
-        <div>
-            <a href="satuan/create" class="btn btn-primary">Tambah<Produk></Produk></a>
+    @if(Auth::check() && Auth::User()->level=='admin')
+        <div class="bottom-nav">
+            <div>
+                <a href="satuan/create" class="btn btn-primary">Tambah<Produk></Produk></a>
+            </div>
         </div>
-    </div>
+    @endif
 
 </div>
 @stop

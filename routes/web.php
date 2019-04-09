@@ -22,7 +22,7 @@ Route::group(['middleware'=>['web']],function()
     Route::get('login','Auth\LoginController@showLoginForm')->name('login');
     Route::post('login','Auth\LoginController@login')->name('login');
     Route::get('register',function (){return redirect('/');});
-    Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('/barang', 'HomeController@index')->name('home');
 
     //route barang,ruangan,satuan,jenis
     Route::resource('pengguna','UserController');
@@ -32,6 +32,7 @@ Route::group(['middleware'=>['web']],function()
     Route::resource('satuan','SatuanController');
     Route::resource('jenis','JenisController');
     Route::resource('ruangan','RuanganController');
+    Route::resource('pinjaman','PinjamanController');
 });
-route::get('tes-collection','BarangController@tesCollection');
+route::get('test','BarangController@test');
 route::get('date-mutator','BarangController@dateMutator');

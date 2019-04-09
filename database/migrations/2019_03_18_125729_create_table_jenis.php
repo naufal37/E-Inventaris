@@ -13,20 +13,16 @@ class CreateTableJenis extends Migration
      */
     public function up()
     {
-        Schema::create('jenis', function (Blueprint $table) {
+        Schema::create('jenis', function (Blueprint $table)
+        {
             $table->increments('id');
             $table->string('jenis_barang',30);
             $table->timestamps();
         });
 
-        Schema::table('barang',function (Blueprint $table){
-            $table->foreign('id_jenis')
-                ->references('id')
-                ->on('jenis')
-                ->onDelete('cascade')
-                ->onUpdate('cascade');
-
-
+        Schema::table('barang',function (Blueprint $table)
+        {
+            $table->foreign('id_jenis')->references('id')->on('jenis')->onDelete('cascade')->onUpdate('cascade');
 
         });
     }

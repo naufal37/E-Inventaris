@@ -38,13 +38,13 @@ class BarangRequest extends FormRequest
         return [
             'nama_barang' => $nama_barang_rules,
             'kondisi_barang' => 'required|string',
-            'jumlah'=>'required|string',
+            'jumlah'=>'required|numeric',
             'kode_barang'=>$kode_barang_rules,
-            'id_satuan'=>'required|string',
-            'id_jenis'=>'required',
-            'id_ruangan'=>'required',
+            'id_satuan'=>'required|numeric',
+            'id_jenis'=>'required|integer',
+            'id_ruangan'=>'required|integer',
             'suplier'=>'nullable|string|min:2',
-            'tanggal_masuk'=>'required|date',
+            'tanggal_masuk'=>'nullable|date',
 //            'foto'=>'nullable|image|max:500|mimes:jpeg,jpg,png',
         ];
     }

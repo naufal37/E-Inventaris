@@ -22,11 +22,14 @@
         <label>{!! Form::radio('kondisi_barang','Tersedia',true) !!} Tersedia </label>
     </div>
     <div class="radio">
-        <label>{!! Form::radio('kondisi_barang','Rusak') !!} Rusak </label>
+        <label>{!! Form::radio('kondisi_barang','Habis',false) !!} Habis </label>
     </div>
-    <div class="radio">
-        <label>{!! Form::radio('kondisi_barang','Hilang') !!} Hilang </label>
-    </div>
+{{--    <div class="radio">--}}
+{{--        <label>{!! Form::radio('kondisi_barang','Rusak') !!} Rusak </label>--}}
+{{--    </div>--}}
+{{--    <div class="radio">--}}
+{{--        <label>{!! Form::radio('kondisi_barang','Hilang') !!} Hilang </label>--}}
+{{--    </div>--}}
 </div>
 
 <div class="form-group">

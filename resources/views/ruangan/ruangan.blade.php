@@ -8,7 +8,7 @@
         <table class="table">
             <thead>
             <tr>
-{{--                <th>ID</th>--}}
+                <th>Nomer</th>
                 <th>Nama Ruangan</th>
                 <th>Kode Ruangan</th>
                 <th>Lokasi Ruangan</th>
@@ -16,22 +16,21 @@
             </tr>
             </thead>
             <tbody>
+            <?php $i=1;?>
             @foreach($list_ruangan as $ruangan)
                 <tr>
-{{--                <td>{{$ruangan->id}}</td>--}}
+                <td>{{$i++}}</td>
                 <td>{{$ruangan->nama_ruangan}}</td>
                 <td>{{$ruangan->kode_ruangan}}</td>
                 <td>{{$ruangan->lokasi}}</td>
                 <td>{{$ruangan->petugas_ruangan}}</td>
-                    {{--->format('d-m-Y')--}}
 
-                {{--<td>@if (!empty($produk->bonus->bonus)) {{$produk->bonus->bonus}} @else - @endif</td>--}}
-                {{--<td>{{$barang->bonus->bonus}}</td>--}}
                 <td>
+                    @if(Auth::check() && Auth::User()->level=='admin')
                     <div class="box-button">
                         {{link_to('ruangan/'.$ruangan->id,'Detail',['class'=>'btn btn-success btn-sm'])}}
                     </div>
-                    <div class="box-button">
+                        <div class="box-button">
                         {{link_to('ruangan/'.$ruangan->id.'/edit','Edit',['class'=>'btn btn-warning btn-sm'])}}
                     </div>
                     <div class="box-button">
@@ -39,6 +38,11 @@
                         {!! Form::submit('Delete',['class'=>'btn btn-danger btn-sm']) !!}
                         {!! Form::close() !!}
                     </div>
+                    @else
+                        <div class="box-button">
+                            {{link_to('ruangan/'.$ruangan->id,'Detail',['class'=>'btn btn-success btn-sm'])}}
+                        </div>
+                    @endif
                 </td>
                 </tr>
             @endforeach
@@ -56,11 +60,13 @@
         </div>
     </div>
 
-    <div class="bottom-nav">
-        <div>
-            <a href="{{url('ruangan/create')}}" class="btn btn-primary">Tambah<Produk></Produk></a>
+    @if(Auth::check() && Auth::User()->level=='admin')
+        <div class="bottom-nav">
+            <div>
+                <a href="{{url('ruangan/create')}}" class="btn btn-primary">Tambah</a>
+            </div>
         </div>
-    </div>
+    @endif
 
 </div>
 @stop

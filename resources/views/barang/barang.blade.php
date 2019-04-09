@@ -19,11 +19,16 @@
                 <tr>
                 <td>{{$barang->id}}</td>
                 <td>{{$barang->nama_barang}}</td>
+                    @if($barang->jumlah<1)
+                <td>Tidak Tersedia</td>
+                    @else
                 <td>{{$barang->kondisi_barang}}</td>
+                    @endif
                 @if(Auth::check() && Auth::User()->level=='admin')
                     <td>
                     <div class="box-button">
                         {{link_to('barang/'.$barang->id,'Detail',['class'=>'btn btn-success btn-sm'])}}
+
                     </div>
                     <div class="box-button">
                         {{link_to('barang/'.$barang->id.'/edit','Edit',['class'=>'btn btn-warning btn-sm'])}}

@@ -144,7 +144,7 @@ return [
 
         'jumlah'=>[
             'required' => 'Anda Harus Mengisi Jumlah Barang',
-            'integer' => 'Jumlah Barang Harus Angka',
+            'numeric' => 'Jumlah Barang Harus Angka',
             'max' => 'Jumlah Barang Maksimal 30 Karakter',
         ],
 
@@ -165,6 +165,7 @@ return [
 
         'suplier'=>[
             'string' => 'Suplier Barang Harus Berupa Karakter',
+            'min' => 'Nama Suplier Harus Lebih Dari :min Karakter',
         ],
         'kode_ruangan_jenis'=>[
             'required' => 'Anda Harus Memilih Jenis Barang',

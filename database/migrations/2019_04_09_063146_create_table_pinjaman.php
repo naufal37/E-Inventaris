@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTableSuplier extends Migration
+class CreateTablePinjaman extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,15 @@ class CreateTableSuplier extends Migration
      */
     public function up()
     {
-        Schema::create('suplier', function (Blueprint $table) {
-            $table->integer('id_barang')->unsigned()->primary('id_barang');
-            $table->string('suplier',70)->nullable();
+        Schema::create('pinjaman', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('id_barang')->unsigned();
+            $table->integer('jumlah');
+            $table->string('peminjam');
+            $table->enum('status',['acc','belum-acc','kembali']);
             $table->timestamps();
-
+        });
+        Schema::table('pinjaman', function (Blueprint $table) {
             $table->foreign('id_barang')->references('id')->on('barang')->onDelete('cascade')->onUpdate('cascade');
         });
     }
@@ -29,6 +33,6 @@ class CreateTableSuplier extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('suplier');
+        Schema::dropIfExists('pinjaman');
     }
 }

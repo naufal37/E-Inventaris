@@ -3,13 +3,13 @@
 <div class="produk">
     <h2> Daftar Jenis Barang </h2>
     @include('_partial.flash_message')
-
     @if ($jumlah_jenis!=0)
         <table class="table">
             <thead>
             <tr>
                 <th>Nomer</th>
                 <th>Jenis Barang</th>
+                <th>Aksi</th>
             </tr>
             </thead>
             <tbody>
@@ -19,6 +19,8 @@
                 <td>{{$i++}}</td>
                 <td>{{$jenis->jenis_barang}}</td>
                 <td>
+                    @if(Auth::check() && Auth::User()->level=='admin')
+
                     <div class="box-button">
                         {{link_to('jenis/'.$jenis->id,'Detail',['class'=>'btn btn-success btn-sm'])}}
                     </div>
@@ -30,6 +32,11 @@
                         {!! Form::submit('Delete',['class'=>'btn btn-danger btn-sm']) !!}
                         {!! Form::close() !!}
                     </div>
+                    @else
+                        <div class="box-button">
+                            {{link_to('jenis/'.$jenis->id,'Detail',['class'=>'btn btn-success btn-sm'])}}
+                        </div>
+                    @endif
                 </td>
                 </tr>
             @endforeach
@@ -46,12 +53,14 @@
             {{$list_jenis->links()}}
         </div>
     </div>
-
+    @if(Auth::check() && Auth::User()->level=='admin')
     <div class="bottom-nav">
         <div>
-            <a href="jenis/create" class="btn btn-primary">Tambah<Produk></Produk></a>
+            <a href="jenis/create" class="btn btn-primary">Tambah</a>
         </div>
     </div>
+    @endif
+
 
 </div>
 @stop

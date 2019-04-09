@@ -58,4 +58,8 @@ class Barang extends Model
     {
         return $this->belongsTo('App\Satuan','id_satuan');
     }
+
+    public function pinjaman(){
+        return $this->hasMany('App\Pinjaman','id_barang');
+    }
 };
