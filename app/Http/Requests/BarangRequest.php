@@ -43,9 +43,8 @@ class BarangRequest extends FormRequest
             'id_satuan'=>'required|numeric',
             'id_jenis'=>'required|integer',
             'id_ruangan'=>'required|integer',
-            'suplier'=>'nullable|string|min:2',
+            'suplier'=>'required|string',
             'tanggal_masuk'=>'nullable|date',
-//            'foto'=>'nullable|image|max:500|mimes:jpeg,jpg,png',
         ];
     }
 }

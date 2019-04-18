@@ -3,6 +3,7 @@
 <div class="barang">
     <h2> Daftar Barang </h2>
     @include('barang.search')
+    @include('barang.report')
     @include('_partial.flash_message')
     @if ($jumlah_barang!=0)
         <table class="table">
@@ -13,11 +14,12 @@
                 <th>Kondisi Barang</th>
                 <th>Pilihan</th>
             </tr>
+            <?php $i=1;?>
             </thead>
             <tbody>
                 @foreach($list_barang as $barang)
                 <tr>
-                <td>{{$barang->id}}</td>
+                <td>{{$i++}}</td>
                 <td>{{$barang->nama_barang}}</td>
                     @if($barang->jumlah<1)
                 <td>Tidak Tersedia</td>
@@ -27,9 +29,13 @@
                 @if(Auth::check() && Auth::User()->level=='admin')
                     <td>
                     <div class="box-button">
-                        {{link_to('barang/'.$barang->id,'Detail',['class'=>'btn btn-success btn-sm'])}}
-
+                        {{link_to('pinjaman/create/'.$barang->id,'Pinjam',['class'=>'btn btn-success btn-sm'])}}
                     </div>
+
+                    <div class="box-button">
+                        {{link_to('barang/'.$barang->id,'Detail',['class'=>'btn btn-success btn-sm'])}}
+                    </div>
+
                     <div class="box-button">
                         {{link_to('barang/'.$barang->id.'/edit','Edit',['class'=>'btn btn-warning btn-sm'])}}
                     </div>
@@ -39,12 +45,19 @@
                         {!! Form::close() !!}
                     </div>
                     </td>
-                        @else
+                        @elseif(Auth::check() && Auth::User()->level=='siswa')
                         <td>
+                            <div class="box-button">
+                                {{link_to('pinjaman/create/'.$barang->id,'Pinjam',['class'=>'btn btn-success btn-sm'])}}
+                            </div>
                             <div class="box-button">
                                 {{link_to('barang/'.$barang->id,'Detail',['class'=>'btn btn-success btn-sm'])}}
                             </div>
                         </td>
+                    @else
+                    <div class="box-button">
+                                {{link_to('barang/'.$barang->id,'Detail',['class'=>'btn btn-success btn-sm'])}}
+                            </div>
                     @endif
                 </tr>
             @endforeach
@@ -74,6 +87,3 @@
 </div>
 @stop
 
-@section('footer')
-    @include('footer')
-@stop

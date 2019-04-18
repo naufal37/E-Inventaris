@@ -28,10 +28,14 @@ Route::group(['middleware'=>['web']],function()
     Route::resource('pengguna','UserController');
     Route::get('barang/cari','BarangController@cari');
     Route::get('ruangan/cari','RuanganController@cari');
+    Route::get('report','BarangController@displayreport');
     Route::resource('barang','BarangController');
     Route::resource('satuan','SatuanController');
     Route::resource('jenis','JenisController');
     Route::resource('ruangan','RuanganController');
+    Route::get('pinjaman/create/{id}','PinjamanController@create');
+    Route::get('pengembalian/{id}','PinjamanController@pengembalian');
+    Route::patch('pengembalian/{id}','PinjamanController@simpanpengembalian');
     Route::resource('pinjaman','PinjamanController');
 });
 route::get('test','BarangController@test');

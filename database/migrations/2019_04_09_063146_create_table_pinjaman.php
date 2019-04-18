@@ -18,7 +18,7 @@ class CreateTablePinjaman extends Migration
             $table->integer('id_barang')->unsigned();
             $table->integer('jumlah');
             $table->string('peminjam');
-            $table->enum('status',['acc','belum-acc','kembali']);
+            $table->enum('status',['acc','belum-acc','kembali','ditolak']);
             $table->timestamps();
         });
         Schema::table('pinjaman', function (Blueprint $table) {

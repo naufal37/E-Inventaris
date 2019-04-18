@@ -24,12 +24,7 @@
     <div class="radio">
         <label>{!! Form::radio('kondisi_barang','Habis',false) !!} Habis </label>
     </div>
-{{--    <div class="radio">--}}
-{{--        <label>{!! Form::radio('kondisi_barang','Rusak') !!} Rusak </label>--}}
-{{--    </div>--}}
-{{--    <div class="radio">--}}
-{{--        <label>{!! Form::radio('kondisi_barang','Hilang') !!} Hilang </label>--}}
-{{--    </div>--}}
+
 </div>
 
 <div class="form-group">
@@ -109,13 +104,13 @@
     <label for="jenis" class="control-label">Jenis Barang</label>
     @if ($errors->any())
         @if($errors->has('id_jenis'))
-            {!! Form::select('id_jenis',$list_jenis,null,['class'=>'form-control is-invalid','id'=>'jenis_barang','placeholder'=>'Pilih Jenis Barang']) !!}
+            {!! Form::select('id_jenis',$list_jenis,null,['class'=>'form-control selectric is-invalid','id'=>'jenis_barang','placeholder'=>'Pilih Jenis Barang']) !!}
             <span class="help-block">{{$errors->first('id_jenis')}}</span>
         @else
-            {!! Form::select('id_jenis',$list_jenis,null,['class'=>'form-control is-valid','id'=>'jenis_barang','placeholder'=>'Pilih Jenis Barang']) !!}
+            {!! Form::select('id_jenis',$list_jenis,null,['class'=>'form-control selectric is-valid','id'=>'jenis_barang','placeholder'=>'Pilih Jenis Barang']) !!}
         @endif
     @else
-        {!! Form::select('id_jenis',$list_jenis,null,['class'=>'form-control','id'=>'jenis_barang','placeholder'=>'Pilih Jenis Barang']) !!}
+        {!! Form::select('id_jenis',$list_jenis,null,['class'=>'form-control selectric','id'=>'jenis_barang','placeholder'=>'Pilih Jenis Barang']) !!}
     @endif
 </div>
 
@@ -123,19 +118,19 @@
     {!! Form::label('tanggal_masuk','Tanggal Masuk',['class'=>'control-label']) !!}
     @if ($errors->any())
         @if($errors->has('tanggal_masuk'))
-            {!! Form::date('tanggal_masuk',!empty($barang) ? $barang->tanggal_masuk->format('Y-m-d'): null,['class'=>'form-control is-invalid','id'=>'tanggal_masuk']) !!}
+            {!! Form::date('tanggal_masuk',!empty($barang) ? $barang->tanggal_masuk->format('Y-m-d'): null,['class'=>'form-control datepicker is-invalid','id'=>'tanggal_masuk']) !!}
             <span class="help-block">{{$errors->first('tanggal_masuk')}}</span>
     @else
-        {!! Form::date('tanggal_masuk',!empty($barang) ? $barang->tanggal_masuk->format('Y-m-d'): null,['class'=>'form-control is-valid','id'=>'tanggal_masuk']) !!}
+        {!! Form::date('tanggal_masuk',!empty($barang) ? $barang->tanggal_masuk->format('Y-m-d'): null,['class'=>'form-control datepicker is-valid','id'=>'tanggal_masuk']) !!}
     @endif
 
     @else
-        {!! Form::date('tanggal_masuk',!empty($barang) ? $barang->tanggal_masuk->format('Y-m-d'): null,['class'=>'form-control','id'=>'tanggal_masuk']) !!}
+        {!! Form::date('tanggal_masuk',!empty($barang) ? $barang->tanggal_masuk->format('Y-m-d'): null,['class'=>'form-control datepicker','id'=>'tanggal_masuk']) !!}
     @endif
 </div>
 <div class="form-group">
     {!! Form::label('keterangan','Keterangan',['class'=>'control-label']) !!}
-    {!! Form::text('keterangan',null,['class'=>'form-control']) !!}
+    {!! Form::textarea('keterangan',null,['class'=>'form-control']) !!}
 </div>
 
 {{--<div class="form-group">--}}

@@ -1,9 +1,10 @@
 @extends('template')
 @section('main')
-    <div id="ruangan">
-        <h2>Tambah Ruangan</h2>
-        {!! Form::open(['url'=>'ruangan']) !!}
-            @include('ruangan.form',['button'=>'Tambah Ruangan'])
+    <div id="pinjaman">
+        <h2>Buat Pinjaman</h2>
+        @include('_partial.flash_message')
+        {!! Form::open(['url'=>'pinjaman']) !!}
+            @include('pinjaman.form',['button'=>'Buat Pinjaman'])
         {!! Form::close() !!}
     </div>
 @stop

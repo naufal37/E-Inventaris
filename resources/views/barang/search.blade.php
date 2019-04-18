@@ -1,6 +1,5 @@
 <div id = "search">
     {!! Form::open(['url'=>'barang/cari','method'=>'GET','id'=>'form-pencarian'])!!}
-
         <div class="row">
             <div class="col-md-2">
                 @if(!empty($id_ruangan))

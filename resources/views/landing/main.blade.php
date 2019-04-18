@@ -235,10 +235,7 @@
                 <!-- Title & Desc Row Ends -->
                 <!-- Contact Row Begins -->
                 <div class="row">
-                   <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 footer-about m-b-xs-15">
-                    <h3 class="footer-header">Tentang E-Inventaris</h3>
-                    <p>Sistem Informasi Absensi Jari Online adalah aplikasi pencatatan kehadiran PNS yang telah diterapkan di satuan unit kerja Kabupaten Sumedang.</p>
-                </div>
+                   
                 <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 footer-menu m-b-xs-15">
                     <h3 class="footer-header">Pintasan Cepat</h3>
                     <div class="row">

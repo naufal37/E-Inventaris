@@ -50,14 +50,6 @@
                 <th> Keterangan</th>
                 <td>{{$detail->keterangan}}</td>
             </tr>
-            <tr>
-                <th> Foto </th>
-                @if(isset($detail->foto))
-                    <img src="{{ asset('fotoupload/' . $detail->foto)}}">
-                @else
-                    <img src="{{ asset('fotoupload/user-4.png')}}">
-                @endif
-            </tr>
         </table>
     </div>
 @stop
