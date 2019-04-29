@@ -7,6 +7,7 @@
 
         <div class="collapse navbar-collapse" id="navbarsExample09">
             <ul class="navbar-nav mr-auto">
+                @if(Auth::check())
                 @if (!empty($halaman) && $halaman=='barang')
                     <li class="nav-item active">
                         <a class="nav-link" href="{{url('barang')}}"> Barang <span class="sr-only"></span></a>
@@ -15,6 +16,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{url('barang')}}"> Barang <span class="sr-only"></span></a>
                     </li>
+                @endif
                 @endif
                     @if(Auth::check())
                         @if (!empty($halaman) && $halaman=='ruangan')
@@ -60,6 +62,18 @@
                         @else
                             <li class="nav-item">
                                 <a class="nav-link" href="{{url('pengguna')}}">Pengguna</a>
+                            </li>
+                        @endif
+                    @endif
+
+                    @if(Auth::check())
+                        @if (!empty($halaman) && $halaman=='pinjaman')
+                            <li class="nav-item active">
+                                <a class="nav-link" href="{{url('pinjaman')}}">Pinjaman</a>
+                            </li>
+                        @else
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{url('pinjaman')}}">Pinjaman</a>
                             </li>
                         @endif
                     @endif

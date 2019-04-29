@@ -20,9 +20,9 @@ class FormBarangServiceProvider extends ServiceProvider
     {
         view()->composer('barang/form',function ($view)
         {
-            $view->with('list_jenis',Jenis::pluck('jenis_barang','id'));
-            $view->with('list_ruangan',Ruangan::pluck('nama_ruangan','id'));
-            $view->with('list_satuan',Satuan::pluck('satuan','id'));
+            $view->with('list_jenis',Jenis::all());
+            $view->with('list_ruangan',Ruangan::all());
+            $view->with('list_satuan',Satuan::all());
         });
         view()->composer('barang/barang',function ($view)
         {

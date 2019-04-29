@@ -24,11 +24,7 @@
                 @else
                     {!! Form::text('kata_kunci',null,['class'=>'form-control','placeholder'=>'Masukkan Kata Kunci']) !!}
                 @endif
-
-                <span class="input-group-btn">
-                    {!! Form::button('Cari',['class'=>'btn btn-default','type'=>'submit']) !!}
-                </span>
-
+                    <button type="submit" class="btn btn-primary">Cari</button>
             </div>
         </div>
         </div>

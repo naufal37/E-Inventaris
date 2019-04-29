@@ -16,7 +16,7 @@ class RuanganController extends Controller
     }
 
     public function index(){
-        $list_ruangan = Ruangan::orderBy('nama_ruangan','desc')->Paginate(1);
+        $list_ruangan = Ruangan::orderBy('nama_ruangan','desc')->Paginate(5);
         $jumlah_ruangan= Ruangan::all()->count();
         return view('ruangan/ruangan',compact('list_ruangan','jumlah_ruangan'));
     }

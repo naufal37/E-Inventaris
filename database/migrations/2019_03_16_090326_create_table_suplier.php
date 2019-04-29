@@ -15,7 +15,7 @@ class CreateTableSuplier extends Migration
     {
         Schema::create('suplier', function (Blueprint $table) {
             $table->integer('id_barang')->unsigned()->primary('id_barang');
-            $table->string('suplier',70)->nullable();
+            $table->string('suplier',70);
             $table->timestamps();
 
             $table->foreign('id_barang')->references('id')->on('barang')->onDelete('cascade')->onUpdate('cascade');

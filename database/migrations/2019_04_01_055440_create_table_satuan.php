@@ -26,6 +26,12 @@ class CreateTableSatuan extends Migration
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
         });
+
+        Schema::table('satuan', function (Blueprint $table)
+        {
+            DB::table('satuan')->
+            insert(['id'=>null, 'satuan'=>'Buah']);
+        });
     }
 
     /**

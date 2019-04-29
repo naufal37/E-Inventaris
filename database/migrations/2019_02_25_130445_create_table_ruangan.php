@@ -33,6 +33,15 @@ class CreateTableRuangan extends Migration
 
 
         });
+
+        Schema::table('ruangan', function (Blueprint $table)
+        {
+            DB::table('ruangan')->
+            insert(['id'=>null, 'nama_ruangan'=>'Gudang',
+                'kode_ruangan'=>'GDN-001',
+                'lokasi'=>'Kampus Depan',
+                'petugas_ruangan'=>'Naufal']);
+        });
     }
 
     /**

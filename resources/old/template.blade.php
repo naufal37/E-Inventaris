@@ -21,10 +21,10 @@
 <body>
 <div class="container">
 @include('navbar')
-@yield('ss')
+@yield('main')
 
 </div>
-@yield('ddd')
+@yield('footer')
 </body>
 
 </html>

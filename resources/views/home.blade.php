@@ -1,23 +1,14 @@
-@extends('views.layouts.app')
-
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
+@extends('template')
+@section('main')
+    <div class="col-12 mb-4">
+        <div class="hero bg-success text-white">
+            <div class="hero-inner">
+                <h2>Selamat Datang</h2>
+                <p class="lead">Anda Telah Berhasil Login.</p>
+                <div class="mt-4">
+                    <a href="{{url('barang')}}" class="btn btn-outline-white btn-lg btn-icon icon-left"><i class="far fa-user"></i> Tambah Barang</a>
                 </div>
             </div>
         </div>
     </div>
-</div>
-@endsection
+@stop

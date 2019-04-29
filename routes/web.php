@@ -37,6 +37,8 @@ Route::group(['middleware'=>['web']],function()
     Route::get('pengembalian/{id}','PinjamanController@pengembalian');
     Route::patch('pengembalian/{id}','PinjamanController@simpanpengembalian');
     Route::resource('pinjaman','PinjamanController');
+
+    Route::get('home',function(){return view('home');});
 });
 route::get('test','BarangController@test');
 route::get('date-mutator','BarangController@dateMutator');

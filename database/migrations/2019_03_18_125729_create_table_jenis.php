@@ -25,6 +25,12 @@ class CreateTableJenis extends Migration
             $table->foreign('id_jenis')->references('id')->on('jenis')->onDelete('cascade')->onUpdate('cascade');
 
         });
+
+        Schema::table('jenis', function (Blueprint $table)
+        {
+            DB::table('jenis')->
+            insert(['id'=>null, 'jenis_barang'=>'Elektronik']);
+        });
     }
 
     /**

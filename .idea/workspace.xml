@@ -2,16 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a5c1bd4-0625-48e5-ab98-6fc3b9573fce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Suplier.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_03_16_090326_create_table_suplier.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/template2.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7df82d36-cd48-4df0-b8aa-111dbc9b6705.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7df82d36-cd48-4df0-b8aa-111dbc9b6705.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inventaris.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inventaris.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Barang.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Barang.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BarangController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BarangController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/id/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/id/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/barang/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/barang/detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RuanganController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RuanganController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/FormBarangServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/FormBarangServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_02_25_130445_create_table_ruangan.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_02_25_130445_create_table_ruangan.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_03_16_090326_create_table_suplier.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_03_16_090326_create_table_suplier.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_03_18_125729_create_table_jenis.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_03_18_125729_create_table_jenis.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_04_01_055440_create_table_satuan.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_04_01_055440_create_table_satuan.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/old/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/old/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/old/template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/old/template.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/barang/barang.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/barang/barang.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/barang/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/barang/form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/barang/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/barang/search.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/navbar.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/navbars.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navbars2.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/rev/selection.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/rev/selection.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/template.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stisla-2.2.0/temp/footer.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stisla-2.2.0/temp/home.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stisla-2.2.0/temp/navbar.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stisla-2.2.0/temp/template.blade.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,132 +60,100 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/barang/form.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5652">
+              <caret line="389" column="15" selection-start-line="389" selection-start-column="15" selection-end-line="389" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Providers/FormBarangServiceProvider.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BarangController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1191">
-              <caret line="78" column="40" lean-forward="true" selection-start-line="78" selection-start-column="40" selection-end-line="78" selection-end-column="40" />
+            <state relative-caret-position="1701">
+              <caret line="95" column="41" selection-start-line="95" selection-start-column="41" selection-end-line="95" selection-end-column="41" />
               <folding>
-                <element signature="e#40#56#0#PHP" expanded="true" />
+                <element signature="e#40#76#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/lang/id/validation.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/navbars2.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="164" column="63" selection-start-line="164" selection-start-column="63" selection-end-line="164" selection-end-column="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Barang.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
-              <folding>
-                <element signature="e#23#45#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/barang/form.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/ruangan/detail.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/ruangan/ruangan.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/barang/detail.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/barang/barang.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
-              <folding>
-                <marker date="1552706609389" expanded="true" signature="1207:1510" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Suplier.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+            <state relative-caret-position="1890">
+              <caret line="90" column="41" selection-start-line="90" selection-start-column="41" selection-end-line="90" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>lebih</find>
-      <find>login</find>
-      <find>alias</find>
+      <find>id_bar</find>
+      <find>ditla</find>
+      <find>sebagian</find>
+      <find>script.js</find>
+      <find>remove</find>
+      <find>sidebar_nic</find>
+      <find>active</find>
+      <find>cleave</find>
+      <find>?</find>
+      <find>number</find>
+      <find>avatar</find>
+      <find>date picker</find>
+      <find>$barang</find>
+      <find>date</find>
+      <find>text-are</find>
+      <find>textarea</find>
+      <find>.icon-</find>
+      <find>&lt;but</find>
+      <find>text are</find>
       <find>status</find>
-      <find>jenis</find>
-      <find>satuan</find>
-      <find>sat</find>
-      <find>jumlah</find>
-      <find>requir</find>
-      <find>locale</find>
-      <find>custom</find>
-      <find>$button</find>
-      <find>tambah</find>
-      <find>button</find>
       <find>submit</find>
-      <find>barang</find>
-      <find>ruangan</find>
-      <find>updat</find>
-      <find>update</find>
-      <find>list_ruangan</find>
-      <find>edit</find>
-      <find>list_ruanga</find>
+      <find>Form::select</find>
+      <find>welci</find>
+      <find>Suplier</find>
+      <find>select</find>
+      <find>jenis</find>
+      <find>ruanga</find>
+      <find>index</find>
+      <find>suplier</find>
+      <find>satuan</find>
     </findStrings>
+    <replaceStrings>
+      <replace>id_ruangan</replace>
+      <replace>id</replace>
+      <replace>kode_ruangan</replace>
+      <replace>jenis_barang</replace>
+      <replace>satuan</replace>
+      <replace>$satuan</replace>
+      <replace>$id</replace>
+      <replace>$detail</replace>
+      <replace>$nama_ruangan</replace>
+      <replace>$pengguna</replace>
+      <replace>$barang</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -181,42 +171,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
-        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/login/login.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/masuk/masuk.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/landing/main.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/barang/tambah.blade.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/fa6b0ed6-b86b-4c19-90ea-8a52af293ecd/console_1.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/fa6b0ed6-b86b-4c19-90ea-8a52af293ecd/console.sql" />
         <option value="$PROJECT_DIR$/database/migrations/2019_01_29_121650_create_table_barang.php" />
-        <option value="$PROJECT_DIR$/resources/views/template.blade.php" />
-        <option value="$PROJECT_DIR$/app/Providers/LaravelAppServiceProvider.php" />
-        <option value="$PROJECT_DIR$/resources/views/form_error_list.blade.php" />
-        <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/resources/views/ruangan(cadangan)/create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/ruangan/barang.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/navbar.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_02_25_130445_create_table_ruangan.php" />
-        <option value="$PROJECT_DIR$/resources/views/ruangan/create.blade.php" />
-        <option value="$PROJECT_DIR$/app/Ruangan.php" />
-        <option value="$PROJECT_DIR$/resources/views/ruangan/form.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/barang/create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/barang/edit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/ruangan/detail.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/RuanganController.php" />
-        <option value="$PROJECT_DIR$/resources/views/barang/barang.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/ruangan/ruangan.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/footer.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_03_16_090326_create_table_suplier.php" />
-        <option value="$PROJECT_DIR$/app/Suplier.php" />
         <option value="$PROJECT_DIR$/app/Barang.php" />
+        <option value="$PROJECT_DIR$/app/Pinjaman.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_04_09_063146_create_table_pinjaman.php" />
+        <option value="$PROJECT_DIR$/resources/views/pinjaman/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/barang/blank.blade.php" />
+        <option value="$PROJECT_DIR$/resources/k.blade.php" />
+        <option value="$PROJECT_DIR$/stisla-2.2.0/dist/blank.blade.php" />
+        <option value="$PROJECT_DIR$/resources/old/template.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/barang/components-table.blade.php" />
+        <option value="$PROJECT_DIR$/app/Providers/LaravelAppServiceProvider.php" />
+        <option value="$PROJECT_DIR$/resources/views/rev/navbar.html" />
+        <option value="$PROJECT_DIR$/stisla-2.2.0/dist/blank.html" />
+        <option value="$PROJECT_DIR$/resources/views/footer.blade.php" />
+        <option value="$PROJECT_DIR$/stisla-2.2.0/dist/assets/js/page/bootstrap-modal.js" />
+        <option value="$PROJECT_DIR$/stisla-2.2.0/dist/bootstrap-modal.html" />
+        <option value="$PROJECT_DIR$/resources/old/old v2/template.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/BarangRequest.php" />
         <option value="$PROJECT_DIR$/resources/views/barang/detail.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/barang/form.blade.php" />
-        <option value="$PROJECT_DIR$/resources/lang/id/validation.php" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/resources/views/barang/barang_pdf.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/barang/report.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/navbar.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pinjaman/edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pinjaman/pinjaman.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pinjaman/pengembalian.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pinjaman/form.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/PinjamanController.php" />
+        <option value="$PROJECT_DIR$/resources/views/navbars.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/template2.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/rev/selection.html" />
+        <option value="$PROJECT_DIR$/resources/views/barang/search.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/BarangController.php" />
+        <option value="$PROJECT_DIR$/stisla-2.2.0/dist/auth-login.html" />
+        <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/barang/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/template.blade.php" />
+        <option value="$PROJECT_DIR$/app/Providers/FormBarangServiceProvider.php" />
+        <option value="$PROJECT_DIR$/stisla-2.2.0/dist/forms-advanced-form.html" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_03_16_090326_create_table_suplier.php" />
+        <option value="$PROJECT_DIR$/resources/views/barang/barang.blade.php" />
+        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_02_25_130445_create_table_ruangan.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_03_18_125729_create_table_jenis.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_04_01_055440_create_table_satuan.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/navbars2.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/RuanganController.php" />
+        <option value="$PROJECT_DIR$/resources/views/barang/form.blade.php" />
       </list>
     </option>
   </component>
@@ -313,13 +318,22 @@
       <path value="$PROJECT_DIR$/vendor/phar-io/version" />
       <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
       <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
+      <path value="$PROJECT_DIR$/vendor/maatwebsite/excel" />
+      <path value="$PROJECT_DIR$/vendor/jeremeamia/SuperClosure" />
+      <path value="$PROJECT_DIR$/vendor/phpoffice/phpexcel" />
+      <path value="$PROJECT_DIR$/vendor/jimmyjs/laravel-report-generator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-dompdf" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="9" />
-    <option name="y" value="113" />
-    <option name="width" value="1306" />
-    <option name="height" value="693" />
+    <option name="width" value="1356" />
+    <option name="height" value="726" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -337,7 +351,47 @@
             <path>
               <item name="inventaris" type="b2602c69:ProjectViewProjectNode" />
               <item name="inventaris" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="inventaris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inventaris" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="inventaris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inventaris" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="inventaris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inventaris" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Providers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="inventaris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inventaris" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="inventaris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inventaris" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="inventaris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inventaris" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="inventaris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inventaris" type="462c0819:PsiDirectoryNode" />
+              <item name="stisla-2.2.0" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -349,27 +403,33 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql&#10;mariadb" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/old" />
+      <recent name="$PROJECT_DIR$/resources/old/old v3" />
+      <recent name="$PROJECT_DIR$/resources/old/old v2" />
+      <recent name="$PROJECT_DIR$/stisla-2.2.0" />
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views" />
-      <recent name="$PROJECT_DIR$/resources/lang" />
+      <recent name="$PROJECT_DIR$/public/js" />
+      <recent name="$PROJECT_DIR$/resources/views/pinjaman" />
       <recent name="$PROJECT_DIR$/resources/views/barang" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/landing" />
-      <recent name="$PROJECT_DIR$/public/login" />
-      <recent name="$PROJECT_DIR$/resources/views" />
+      <recent name="$PROJECT_DIR$/resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -461,7 +521,69 @@
       <workItem from="1552701325247" duration="1088000" />
       <workItem from="1552705406198" duration="1523000" />
       <workItem from="1552725201878" duration="3941000" />
-      <workItem from="1552803688137" duration="6512000" />
+      <workItem from="1552803688137" duration="14660000" />
+      <workItem from="1552874176007" duration="1011000" />
+      <workItem from="1552878096886" duration="2414000" />
+      <workItem from="1552899930218" duration="117000" />
+      <workItem from="1552900110345" duration="3023000" />
+      <workItem from="1552958345087" duration="1171000" />
+      <workItem from="1552996898074" duration="599000" />
+      <workItem from="1553157205530" duration="88000" />
+      <workItem from="1553157360840" duration="1509000" />
+      <workItem from="1553517420432" duration="7136000" />
+      <workItem from="1553600562724" duration="1476000" />
+      <workItem from="1553608668604" duration="3021000" />
+      <workItem from="1553660288445" duration="4278000" />
+      <workItem from="1553680209954" duration="5775000" />
+      <workItem from="1553768102131" duration="14095000" />
+      <workItem from="1553864884486" duration="6010000" />
+      <workItem from="1553907578567" duration="7902000" />
+      <workItem from="1554026572821" duration="66000" />
+      <workItem from="1554026717371" duration="3801000" />
+      <workItem from="1554044569353" duration="645000" />
+      <workItem from="1554045404154" duration="4135000" />
+      <workItem from="1554097774718" duration="3232000" />
+      <workItem from="1554101100627" duration="5399000" />
+      <workItem from="1554128282339" duration="107000" />
+      <workItem from="1554128413684" duration="4920000" />
+      <workItem from="1554177387479" duration="14989000" />
+      <workItem from="1554210841471" duration="4218000" />
+      <workItem from="1554254876638" duration="332000" />
+      <workItem from="1554257871467" duration="16925000" />
+      <workItem from="1554374185371" duration="6128000" />
+      <workItem from="1554464840244" duration="5895000" />
+      <workItem from="1554522577556" duration="1347000" />
+      <workItem from="1554537084692" duration="19460000" />
+      <workItem from="1554608904480" duration="17477000" />
+      <workItem from="1554692590867" duration="14708000" />
+      <workItem from="1554783200938" duration="22865000" />
+      <workItem from="1554859834008" duration="7551000" />
+      <workItem from="1554877678723" duration="18801000" />
+      <workItem from="1554934134186" duration="3184000" />
+      <workItem from="1554943557764" duration="3020000" />
+      <workItem from="1554947242724" duration="653000" />
+      <workItem from="1554948389349" duration="343000" />
+      <workItem from="1554987988862" duration="212000" />
+      <workItem from="1554988280244" duration="3989000" />
+      <workItem from="1555052941279" duration="14327000" />
+      <workItem from="1555150369213" duration="8402000" />
+      <workItem from="1555220122845" duration="6455000" />
+      <workItem from="1555231738735" duration="1319000" />
+      <workItem from="1555233824345" duration="5225000" />
+      <workItem from="1555250912205" duration="2499000" />
+      <workItem from="1555255195699" duration="1235000" />
+      <workItem from="1555317181687" duration="10738000" />
+      <workItem from="1555376577451" duration="10550000" />
+      <workItem from="1555592475425" duration="2695000" />
+      <workItem from="1555595223142" duration="5135000" />
+      <workItem from="1555639248143" duration="7112000" />
+      <workItem from="1555657094263" duration="10242000" />
+      <workItem from="1555673756439" duration="1335000" />
+      <workItem from="1555676377388" duration="3502000" />
+      <workItem from="1555733094524" duration="3563000" />
+      <workItem from="1556012377320" duration="3612000" />
+      <workItem from="1556267716383" duration="5194000" />
+      <workItem from="1556532649542" duration="281000" />
     </task>
     <task id="LOCAL-00001" summary="Commit Pertama Aplikasi Ujikom Bab 11 Detail Siswa">
       <created>1548993975657</created>
@@ -526,11 +648,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552726510589</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Commit Keenam Modul Ruangan 50% selesai &amp; Relationship One-To-One Table Suplier Selesai">
+      <created>1552828601349</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1552828601349</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148558000" />
+    <option name="totallyTimeSpent" value="504154000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -542,31 +671,55 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-1" width="1366" height="728" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17569546" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.24924242" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49881798" visible="true" weight="0.3011727" />
+      <window_info id="Structure" order="1" sideWeight="0.501182" side_tool="true" weight="0.225" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32736155" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32656515" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49926794" weight="0.32899022" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49926794" weight="0.3282572" />
       <window_info anchor="bottom" id="Database Console" order="7" weight="0.32682925" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32899022" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3282572" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49926794" weight="0.29153094" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50073206" side_tool="true" weight="0.28175896" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4969697" visible="true" weight="0.27647716" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5030303" side_tool="true" weight="0.27918783" />
       <window_info anchor="bottom" id="SQL Generator" order="13" weight="0.3284553" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="14" weight="0.32994923" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32869694" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3272727" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49881798" visible="true" weight="0.16439395" />
+      <window_info id="Structure" order="1" sideWeight="0.501182" side_tool="true" weight="0.225" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32656515" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49926794" weight="0.3282572" />
+      <window_info anchor="bottom" id="Database Console" order="7" weight="0.32682925" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3282572" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4969697" weight="0.27749577" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5030303" side_tool="true" weight="0.27918783" />
+      <window_info anchor="bottom" id="SQL Generator" order="13" weight="0.3284553" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="14" weight="0.32994923" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3280303" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -625,307 +778,370 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Commit Pertama Aplikasi Ujikom Bab 11 Detail Siswa" />
     <MESSAGE value="Commit KeduaAplikasi Ujikom Bab 15 Validator Start" />
     <MESSAGE value="Commit Kedua Aplikasi Ujikom Bab 15 Manual Validator" />
     <MESSAGE value="Commit Ketiga Validator Beres" />
     <MESSAGE value="Commit Keempat Proses Pembuatan Modul Ruangan" />
     <MESSAGE value="Commit Kelima Modul Ruangan 50% selesai" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit Kelima Modul Ruangan 50% selesai" />
+    <MESSAGE value="Commit Keenam Modul Ruangan 50% selesai &amp; Relationship One-To-One Table Suplier Selesai" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit Keenam Modul Ruangan 50% selesai &amp; Relationship One-To-One Table Suplier Selesai" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/landing/jquery.sticky.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-259">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/masuk/masuk.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="44" column="60" lean-forward="true" selection-start-line="44" selection-start-column="60" selection-end-line="44" selection-end-column="60" />
-          <folding>
-            <element signature="e#3154#3160#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1065" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/landing/main.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="199" column="16" selection-start-line="199" selection-start-column="16" selection-end-line="199" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/barang/tambah.blade.php" />
-    <entry file="file://$PROJECT_DIR$/resources/views/error.blade.php" />
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php" />
-    <entry file="file://$PROJECT_DIR$/bootstrap/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-540" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-          <folding>
-            <element signature="e#33#72#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_01_29_064235_create_barangs_table.php" />
-    <entry file="file://$PROJECT_DIR$/public/robots.txt">
+    <entry file="file://$PROJECT_DIR$/public/assets/js/page/forms-advanced-forms.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fa6b0ed6-b86b-4c19-90ea-8a52af293ecd/console_2.sql" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fa6b0ed6-b86b-4c19-90ea-8a52af293ecd/console_1.sql" />
-    <entry file="das://fa6b0ed6-b86b-4c19-90ea-8a52af293ecd/schema/inventaris/table/barang" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fa6b0ed6-b86b-4c19-90ea-8a52af293ecd/console.sql" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4508a68d-a1e6-4c34-817d-ef7212adc1f4/console.sql">
+    <entry file="file://$PROJECT_DIR$/resources/old/footer.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="das://7df82d36-cd48-4df0-b8aa-111dbc9b6705/schema/inventaris/table/barang">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/resources/old/old v3/navbars.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="95" column="6" selection-start-line="95" selection-start-column="6" selection-end-line="95" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7df82d36-cd48-4df0-b8aa-111dbc9b6705/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/resources/old/old v2/template.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="104" column="54" lean-forward="true" selection-start-line="62" selection-end-line="104" selection-end-column="54" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/lang/id/auth.php">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/resources/old/template.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/BarangRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="46" column="45" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="226" column="78" selection-start-line="226" selection-start-column="78" selection-end-line="226" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/barang/report.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="81" selection-start-line="7" selection-start-column="74" selection-end-line="7" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/old/navbar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="85" column="41" lean-forward="true" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PinjamanController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="176" selection-start-line="176" selection-end-line="176" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pinjaman/form.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
-          <caret line="82" column="19" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
+          <caret line="99" column="33" selection-start-line="99" selection-start-column="33" selection-end-line="99" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/form_error_list.blade.php" />
-    <entry file="file://$PROJECT_DIR$/resources/views/ruangan(bekas buku laravel &amp; cadangan)/detail.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/ruangan(bekas buku laravel &amp; cadangan)/produk.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/pinjaman/pengembalian.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1029">
-          <caret line="49" column="24" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="24" />
+        <state relative-caret-position="105">
+          <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_01_29_121650_create_table_barang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/navbar.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/pinjaman/pinjaman.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pinjaman/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-819" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="137" column="34" selection-start-line="137" selection-start-column="34" selection-end-line="137" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stisla-2.2.0/dist/blank.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/template2.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="135" column="14" selection-start-line="135" selection-start-column="14" selection-end-line="135" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stisla-2.2.0/dist/components-table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="438" column="69" selection-start-line="438" selection-start-column="63" selection-end-line="438" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/barang/search.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="946" column="13" selection-start-line="946" selection-start-column="13" selection-end-line="946" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stisla-2.2.0/dist/auth-login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="86" column="52" lean-forward="true" selection-start-line="86" selection-start-column="52" selection-end-line="86" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Providers/LaravelAppServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
+        <state>
           <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stisla-2.2.0/dist/bootstrap-buttons.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="545" selection-start-line="545" selection-end-line="546" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stisla-2.2.0/dist/bootstrap-form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="532" column="69" selection-start-line="532" selection-start-column="63" selection-end-line="532" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stisla-2.2.0/dist/forms-advanced-form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="89" column="57" selection-start-line="89" selection-start-column="57" selection-end-line="89" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_01_29_121650_create_table_barang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
           <folding>
-            <element signature="e#33#72#0#PHP" expanded="true" />
+            <element signature="e#7#45#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/ruangan(bekas buku laravel &amp; cadangan)/form.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="88" column="28" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/ruangan(bekas buku laravel &amp; cadangan)/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/template.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_25_130445_create_table_ruangan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/ruangan/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/ruangan/form.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/barang/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="94" selection-start-line="4" selection-start-column="94" selection-end-line="4" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RuanganController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Ruangan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/ruangan/detail.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_16_090326_create_table_suplier.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="20" column="115" selection-start-line="20" selection-start-column="115" selection-end-line="20" selection-end-column="115" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/footer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/barang/barang.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
-          <folding>
-            <marker date="1552706609389" expanded="true" signature="1207:1510" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/ruangan/ruangan.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        <state relative-caret-position="315">
+          <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/barang/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Suplier.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
+        <state relative-caret-position="273">
           <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/barang/form.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Barang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
-          <folding>
-            <element signature="e#23#45#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/barang/detail.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+        <state relative-caret-position="147">
+          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/lang/id/validation.php">
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="164" column="63" selection-start-line="164" selection-start-column="63" selection-end-line="164" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BarangController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1191">
-          <caret line="78" column="40" lean-forward="true" selection-start-line="78" selection-start-column="40" selection-end-line="78" selection-end-column="40" />
+        <state relative-caret-position="175">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
-            <element signature="e#40#56#0#PHP" expanded="true" />
+            <element signature="e#7#38#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stisla-2.2.0/dist/components-hero.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="430" column="20" selection-start-line="420" selection-start-column="14" selection-end-line="430" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_18_125729_create_table_jenis.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="31" column="60" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_02_25_130445_create_table_ruangan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="43" column="11" selection-start-line="36" selection-start-column="8" selection-end-line="43" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="30" column="228" selection-start-line="29" selection-start-column="8" selection-end-line="30" selection-end-column="228" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_01_055440_create_table_satuan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RedirectsUsers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/barang/barang.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1192">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+        <state relative-caret-position="276">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+          <folding>
+            <element signature="e#7#389#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/rev/selection.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="170" column="48" selection-start-line="170" selection-start-column="48" selection-end-line="170" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="248" column="16" selection-start-line="248" selection-start-column="16" selection-end-line="248" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/barang/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/template.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="104" column="67" selection-start-line="104" selection-start-column="67" selection-end-line="104" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RuanganController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/barang/form.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5652">
+          <caret line="389" column="15" selection-start-line="389" selection-start-column="15" selection-end-line="389" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/FormBarangServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BarangController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1701">
+          <caret line="95" column="41" selection-start-line="95" selection-start-column="41" selection-end-line="95" selection-end-column="41" />
+          <folding>
+            <element signature="e#40#76#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/navbars2.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="90" column="41" selection-start-line="90" selection-start-column="41" selection-end-line="90" selection-end-column="41" />
         </state>
       </provider>
     </entry>
