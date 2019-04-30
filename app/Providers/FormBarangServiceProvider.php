@@ -33,8 +33,10 @@ class FormBarangServiceProvider extends ServiceProvider
 
         view()->composer('barang/search',function ($view)
         {
-            $view->with('list_ruangan',Ruangan::pluck('nama_ruangan','id'));
-            $view->with('list_jenis',Jenis::pluck('jenis_barang','id'));
+//            $view->with('list_ruangan',Ruangan::pluck('nama_ruangan','id'));
+            $view->with('list_ruangan',Ruangan::all());
+
+            $view->with('list_jenis',Jenis::all());
 
         });
 

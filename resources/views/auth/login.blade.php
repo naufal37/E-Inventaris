@@ -44,8 +44,8 @@
                             <form method="POST" action="{{route('login')}}" class="needs-validation" novalidate="">
                                 @csrf
                                 <div class="form-group">
-                                    <label for="email">{{ __('E-Mail Address') }}</label>
-                                    <input id="email" type="email" class="form-control" name="email" tabindex="1" required autofocus>
+                                    <label for="email">{{ __('E-Mail / Nama Pengguna') }}</label>
+                                    <input id="email" type="text" class="form-control" name="email" tabindex="1" required autofocus>
                                     @if($errors->has('email'))
                                     <div class="invalid-feedback">
                                         {{ $errors->first('email') }}

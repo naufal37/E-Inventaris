@@ -52,7 +52,7 @@ class UserController extends Controller
         $data = $request->all();
         $validator = Validator::make($data,[
             'name' => 'required|max:150',
-            'email' => 'required|email|max:150|unique:users,email',
+            'email' => 'required|max:150|unique:users,email',
             'password' => 'required|confirmed|min:4',
             'level' => 'required|in:siswa,admin,operator',
         ]);
@@ -105,7 +105,7 @@ class UserController extends Controller
         $data = $request->all();
         $validator = Validator::make($data,[
             'name' => 'required|max:150',
-            'email' => 'required|email|max:150|unique:users,email,'.$request->input('id'),
+            'email' => 'required|max:150|unique:users,email,'.$request->input('id'),
             'password' => 'nullable|confirmed|min:4',
             'level' => 'required|in:siswa,admin,operator',
         ]);

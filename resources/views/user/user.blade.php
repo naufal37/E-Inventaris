@@ -8,8 +8,8 @@
             <thead>
             <tr>
                 <th>Nomer</th>
-                <th>Nama Pengguna</th>
-                <th>Email Pengguna</th>
+                <th>Nama</th>
+                <th>Email / Nama Pengguna</th>
                 <th>Level</th>
             </tr>
             </thead>

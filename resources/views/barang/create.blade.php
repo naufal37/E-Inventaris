@@ -2,14 +2,9 @@
 @section('main')
     <div id="barang">
         <h2>Tambah Barang</h2>
-        {!! Form::open(['url'=>'barang']) !!}
+        <form method="POST" action="{{route('barang.store')}}">
+            @csrf
             @include('barang.form',['button'=>'Tambah Barang'])
-        {!! Form::close() !!}
-    </div>
-@stop
-
-@section('footer')
-    <div id="footer">
-        <p>&copy; 2019 E-Inventaris</p>
+        </form>
     </div>
 @stop

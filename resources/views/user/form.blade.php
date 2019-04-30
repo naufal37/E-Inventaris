@@ -16,7 +16,7 @@
 </div>
 
 <div class="form-group">
-    {!! Form::label('email','E-mail',['class'=>'control-label']) !!}
+    {!! Form::label('email','E-mail / Nama Pengguna',['class'=>'control-label']) !!}
     @if($errors->any())
         @if($errors->has('email'))
             {!! Form::text('email',null,['class'=>'form-control is-invalid']) !!}

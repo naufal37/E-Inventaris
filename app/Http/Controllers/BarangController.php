@@ -20,23 +20,28 @@ use PdfReport;
 
 class BarangController extends Controller
 {
-    public function __construct(){
+    public function __construct()
+    {
         $this->middleware('auth');
-        $this->middleware('admin',['except'=>['index','cari','show']]);
+        $this->middleware('admin', ['except' => ['index', 'cari', 'show']]);
 
     }
-    public function index(){
-        $list_barang = Barang::orderBy('nama_barang','asc')->paginate(2);
+
+    public function index()
+    {
+        $list_barang = Barang::orderBy('nama_barang', 'asc')->paginate(2);
         $jumlah_barang = Barang::all()->count();
-        $list_ruangan = Ruangan::pluck('nama_ruangan','id');
-        return view('barang/barang',compact('list_barang','jumlah_barang','list_ruangan'));
+        $list_ruangan = Ruangan::pluck('nama_ruangan', 'id');
+        return view('barang/barang', compact('list_barang', 'jumlah_barang', 'list_ruangan'));
     }
 
-    public function create(){
+    public function create()
+    {
         return view('barang/create');
     }
 
-    public function store(BarangRequest $request){
+    public function store(BarangRequest $request)
+    {
         $input = $request->all();
 
         //==========================================================================>
@@ -71,33 +76,38 @@ class BarangController extends Controller
         $suplier = new Suplier;
         $suplier->suplier = $request->input('suplier');
         $barang->suplier()->save($suplier);
-        Session::flash('flash_message','Barang Telah Berhasil Di Simpan!');
+        Session::flash('flash_message', 'Barang Telah Berhasil Di Simpan!');
 
         return redirect('barang');
 
     }
-    public function show($barang){
+
+    public function show($barang)
+    {
         $detail = Barang::findOrFail($barang);
         $tanggal = $this->tanggal($detail->tanggal_masuk->format('d-m-Y'));
-        if($detail->jumlah<1) {
-            $detail->update(['kondisi_barang'=>'Habis']);
+        if ($detail->jumlah < 1) {
+            $detail->update(['kondisi_barang' => 'Habis']);
         }
-        return view('barang.detail',compact("detail","tanggal"));
+        return view('barang.detail', compact("detail", "tanggal"));
     }
 
-    public function tanggal($tanggal){
-        $pecah = explode('-',$tanggal);
-        $bulan = ['01'=>'januari','02'=>'Februari','03'=>'Maret','04'=>'April','05'=>'Mei','06'=>'Juni','07'=>'Juli','08'=>'Agustus','09'=>'September','10'=>'Oktober','11'=>'November','12'=>'Desember'];
-        return $pecah[0].'-'.$bulan[$pecah[1]].'-'.$pecah[2];
+    public function tanggal($tanggal)
+    {
+        $pecah = explode('-', $tanggal);
+        $bulan = ['01' => 'januari', '02' => 'Februari', '03' => 'Maret', '04' => 'April', '05' => 'Mei', '06' => 'Juni', '07' => 'Juli', '08' => 'Agustus', '09' => 'September', '10' => 'Oktober', '11' => 'November', '12' => 'Desember'];
+        return $pecah[0] . '-' . $bulan[$pecah[1]] . '-' . $pecah[2];
     }
 
-    public function edit($id){
+    public function edit($id)
+    {
         $barang = Barang::findOrFail($id);
         $barang->suplier = $barang->suplier->suplier;
-        return view('barang.edit',compact('barang'));
+        return view('barang.edit', compact('barang'));
     }
 
-    public function update($id,BarangRequest $request){
+    public function update($id, BarangRequest $request)
+    {
         $barang = Barang::findOrFail($id);
         $input = $request->all();
 //==========================================================================>
@@ -131,17 +141,18 @@ class BarangController extends Controller
         $suplier = $barang->suplier; //ini mencari table nya kemudian di deklarasi kan
         $suplier->suplier = $request->input('suplier'); // ini mendeklarasikan kolom dari table yang sudah di deklarasikan di variabel atas kemudian menyimpannya
         $barang->suplier()->save($suplier); //menyimpan data suplier
-        Session::flash('flash_message','Barang Telah Berhasil Di Edit!');
-        Session::flash('edit',true);
+        Session::flash('flash_message', 'Barang Telah Berhasil Di Edit!');
+        Session::flash('edit', true);
 
         return redirect('barang');
     }
 
-    public function destroy($id){
+    public function destroy($id)
+    {
         $barang = Barang::findOrFail($id);
         $barang->delete();
-        Session::flash('flash_message','Barang Telah Berhasil Di Hapus!');
-        Session::flash('hapus',true);
+        Session::flash('flash_message', 'Barang Telah Berhasil Di Hapus!');
+        Session::flash('hapus', true);
         return redirect('barang');
     }
 
@@ -151,48 +162,47 @@ class BarangController extends Controller
         $id_ruangan = $request->input('id_ruangan');
         $id_jenis = $request->input('id_jenis');
 
-            //Query Mencarinya
-            $query = Barang::where('nama_barang', 'like','%'.$kata_kunci.'%');
+        //Query Mencarinya
+        $query = Barang::where('nama_barang', 'like', '%' . $kata_kunci . '%');
 
-            //jika ada ruangan,tambahkan query ruangan,jika tidak ada,berikan null
-            (!empty($id_ruangan)) ? $query->Ruangan($id_ruangan) : '';
+        //jika ada ruangan,tambahkan query ruangan,jika tidak ada,berikan null
+        (!empty($id_ruangan)) ? $query->Ruangan($id_ruangan) : '';
 
-            //jika ada jenis,tambahkan query jenis,jika tidak ada,berikan null
-            (!empty($id_jenis)) ? $query->Jenis($id_jenis) : '';
+        //jika ada jenis,tambahkan query jenis,jika tidak ada,berikan null
+        (!empty($id_jenis)) ? $query->Jenis($id_jenis) : '';
 
-            //paging hasil query
+        //paging hasil query
+        $list_barang = $query->paginate(2);
 
-            $list_barang = $query->paginate(2);
+        //Pagination URL Links
+        $pagination_ruangan = (!empty($id_ruangan)) ? $list_barang->appends(['id_ruangan' => $id_ruangan]) : '';
+        $pagination_jenis = (!empty($id_jenis)) ? $list_barang->appends(['id_jenis' => $id_jenis]) : '';
+        $pagination = $list_barang->appends(['kata_kunci' => $kata_kunci]);
 
-            //Pagination URL Links
-            $pagination_ruangan = (!empty($id_ruangan)) ? $list_barang->appends(['id_ruangan' => $id_ruangan]) : '';
-            $pagination_jenis = (!empty($id_jenis)) ? $list_barang->appends(['id_jenis' => $id_jenis]) : '';
-            $pagination = $list_barang->appends(['kata_kunci' => $kata_kunci]);
-
-            $jumlah_barang = $list_barang->count();
-            return view('barang/barang', compact('list_barang', 'pagination', 'pagination_ruangan', 'pagination_jenis', 'jumlah_barang', 'kata_kunci', 'id_jenis', 'id_ruangan'));
+        $jumlah_barang = $list_barang->count();
+        return view('barang/barang', compact('list_barang', 'pagination', 'pagination_ruangan', 'pagination_jenis', 'jumlah_barang', 'kata_kunci', 'id_jenis', 'id_ruangan'));
     }
 
 
-
-    public function test(){
-return view('barang.components-table');
+    public function test()
+    {
+        return view('barang.components-table');
     }
 
-    public function dateMutator(){
+    public function dateMutator()
+    {
     }
-    public function displayreport(Request $request){
+
+    public function displayreport(Request $request)
+    {
         $title = "Daftar Barang";
         $kata_kunci = $request->input('kata_kunci');
-        if(!empty($kata_kunci))
-        {
-            $query = Barang::where('nama_barang', 'like','%'.$kata_kunci.'%')->orWhere('tanggal_masuk', 'like','%'.$kata_kunci.'%')->orWhere('kode_barang', 'like','%'.$kata_kunci.'%');
+        if (!empty($kata_kunci)) {
+            $query = Barang::where('nama_barang', 'like', '%' . $kata_kunci . '%')->orWhere('tanggal_masuk', 'like', '%' . $kata_kunci . '%')->orWhere('kode_barang', 'like', '%' . $kata_kunci . '%');
+        } else {
+            $query = Barang::select('*');
         }
-        else
-            {
-                $query = Barang::select('*');
-            }
-        $meta = [''=>''];
+        $meta = ['' => ''];
         $columns = [
             'Nama Barang' => "nama_barang",
             'Kondisi Barang' => "kondisi_barang",
@@ -200,7 +210,7 @@ return view('barang.components-table');
             'Kode Barang' => "kode_barang",
             'Tanggal Masuk' => "tanggal_masuk",
         ];
-        return PdfReport::of($title,$meta,$query,$columns)->stream();
+        return PdfReport::of($title, $meta, $query, $columns)->stream();
     }
 
 }

@@ -5,7 +5,7 @@
 @extends('template')
 @section('main')
     <div id="barang">
-        <h2> Detail Barang</h2>
+        <h2> Detail Barang </h2>
 
         <table class="table table-striped">
             <tr>
@@ -29,16 +29,16 @@
                 <td>{{$detail->kode_barang}}</td>
             </tr>
             <tr>
-                <th> Ruangan </th>
+                <th> Ruangan</th>
                 <td>{{$detail->ruangan->nama_ruangan}}</td>
             </tr>
             <tr>
-                <th> Suplier </th>
+                <th> Suplier</th>
                 <td>
                     @if(isset($detail->suplier->suplier))
                         {{$detail->suplier->suplier}}
                     @else
-                    -
+                        -
                     @endif
                 </td>
             </tr>
