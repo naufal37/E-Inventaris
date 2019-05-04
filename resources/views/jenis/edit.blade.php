@@ -1,15 +1,11 @@
 @extends('template')
 @section('main')
-    <div id="ruangan">
+    <div id="jenis">
         <h2>Update Jenis Barang</h2>
-{{--        {!! Form::open(['url'=>'barang/'.$barang->id.'/update','method'=>'PATCH']) !!}--}}
-            {!! Form::model($jenis,['method'=>'PATCH','action'=>['JenisController@update',$jenis->id]]) !!}
-        @include('jenis.form',['button'=>'Update Data'])
-        {!! Form::close() !!}
-    </div>
-@stop
-@section('footer')
-    <div id="footer">
-        <p>&copy; 2019 E-Inventaris</p>
+        <form method="POST" action="{{route('jenis.update',$jenis->id)}}">
+            @method('PATCH')
+            @csrf
+            @include('jenis.form',['button'=>'Update Jenis Barang'])
+        </form>
     </div>
 @stop
