@@ -15,7 +15,7 @@ class FormRuanganServiceProvider extends ServiceProvider
     public function boot()
     {
         view()->composer('ruangan/search',function ($view){
-            $view->with('lokasi',Ruangan::pluck('lokasi','lokasi'));
+            $view->with('nama_lokasi',Ruangan::all());
         });
     }
 

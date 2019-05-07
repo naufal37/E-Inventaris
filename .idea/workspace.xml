@@ -91,17 +91,51 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/barang/search.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/ruangan/search.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="36" lean-forward="true" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+            <state relative-caret-position="378">
+              <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/ruangan/ruangan.blade.php">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/app/Providers/FormRuanganServiceProvider.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="17" column="45" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/barang/search.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BarangController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="161" column="16" lean-forward="true" selection-start-line="161" selection-start-column="16" selection-end-line="161" selection-end-column="16" />
+              <folding>
+                <element signature="e#40#76#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RuanganController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1054">
+              <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -115,11 +149,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sebagian</find>
-      <find>script.js</find>
-      <find>remove</find>
-      <find>sidebar_nic</find>
-      <find>active</find>
       <find>cleave</find>
       <find>?</find>
       <find>number</find>
@@ -145,6 +174,11 @@
       <find>satuan</find>
       <find>selec</find>
       <find>car</find>
+      <find>nama_barang</find>
+      <find>$ruangan</find>
+      <find>$nama_lokasi</find>
+      <find>$id_ruangan</find>
+      <find>$lokasi</find>
     </findStrings>
     <replaceStrings>
       <replace>id_ruangan</replace>
@@ -158,6 +192,10 @@
       <replace>$nama_ruangan</replace>
       <replace>$pengguna</replace>
       <replace>$barang</replace>
+      <replace>nama_ruangan</replace>
+      <replace>$nama_lokasi</replace>
+      <replace>$lokasi</replace>
+      <replace>$tempat</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -178,12 +216,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Providers/LaravelAppServiceProvider.php" />
-        <option value="$PROJECT_DIR$/resources/views/rev/navbar.html" />
-        <option value="$PROJECT_DIR$/stisla-2.2.0/dist/blank.html" />
-        <option value="$PROJECT_DIR$/resources/views/footer.blade.php" />
-        <option value="$PROJECT_DIR$/stisla-2.2.0/dist/assets/js/page/bootstrap-modal.js" />
-        <option value="$PROJECT_DIR$/stisla-2.2.0/dist/bootstrap-modal.html" />
         <option value="$PROJECT_DIR$/resources/old/old v2/template.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/BarangRequest.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
@@ -222,13 +254,19 @@
         <option value="$PROJECT_DIR$/resources/views/barang/barang.old/barangold.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/barang/form.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/barang/search.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/barang/barang.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/jenis/jenis.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/jenis/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/jenis/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/jenis/old/old.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/jenis/form.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/views/barang/barang.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/ruangan/old/old.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/ruangan/ruangan.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/ruangan/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/ruangan/edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/Providers/FormRuanganServiceProvider.php" />
+        <option value="$PROJECT_DIR$/resources/views/ruangan/search.blade.php" />
       </list>
     </option>
   </component>
@@ -364,6 +402,19 @@
             <path>
               <item name="inventaris" type="b2602c69:ProjectViewProjectNode" />
               <item name="inventaris" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="inventaris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inventaris" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="inventaris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inventaris" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -371,6 +422,13 @@
               <item name="inventaris" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="inventaris" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inventaris" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="barang" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="inventaris" type="b2602c69:ProjectViewProjectNode" />
@@ -591,7 +649,7 @@
       <workItem from="1556882574718" duration="1136000" />
       <workItem from="1556970391361" duration="612000" />
       <workItem from="1556974144915" duration="1809000" />
-      <workItem from="1557235720488" duration="117000" />
+      <workItem from="1557235720488" duration="3172000" />
     </task>
     <task id="LOCAL-00001" summary="Commit Pertama Aplikasi Ujikom Bab 11 Detail Siswa">
       <created>1548993975657</created>
@@ -667,7 +725,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="522634000" />
+    <option name="totallyTimeSpent" value="525689000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -682,7 +740,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49881798" visible="true" weight="0.3315565" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49881798" visible="true" weight="0.3315565" />
       <window_info id="Structure" order="1" sideWeight="0.501182" side_tool="true" weight="0.225" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -799,41 +857,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Commit Keenam Modul Ruangan 50% selesai &amp; Relationship One-To-One Table Suplier Selesai" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="137" column="34" selection-start-line="137" selection-start-column="34" selection-end-line="137" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stisla-2.2.0/dist/blank.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stisla-2.2.0/dist/components-table.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="438" column="69" selection-start-line="438" selection-start-column="63" selection-end-line="438" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="946" column="13" selection-start-line="946" selection-start-column="13" selection-end-line="946" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stisla-2.2.0/dist/auth-login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Providers/LaravelAppServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -955,13 +978,6 @@
     <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RuanganController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/template2.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-95">
@@ -1027,13 +1043,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/FormBarangServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="35" column="58" lean-forward="true" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/barang/barang.old/barangold.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="696">
@@ -1041,39 +1050,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BarangController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3423">
-          <caret line="177" column="19" selection-start-line="177" selection-start-column="19" selection-end-line="177" selection-end-column="19" />
-          <folding>
-            <element signature="e#40#76#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/jenis/old/detail.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/barang/barang.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="668">
-          <caret line="73" column="14" selection-start-line="62" selection-start-column="8" selection-end-line="73" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/barang/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="15" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="7" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/barang/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="15" selection-start-line="4" selection-start-column="8" selection-end-line="8" selection-end-column="15" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/jenis/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1123,9 +1101,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/ruangan/ruangan.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/jenis/old/old.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
@@ -1133,10 +1108,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/barang/barang.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="73" column="10" lean-forward="true" selection-start-line="61" selection-start-column="4" selection-end-line="73" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ruangan/old/old.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/barang/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="15" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ruangan/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/barang/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="15" selection-start-line="4" selection-start-column="8" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/FormBarangServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+          <folding>
+            <element signature="e#33#72#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ruangan/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="62" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ruangan/ruangan.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="32" column="57" lean-forward="true" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/FormRuanganServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="17" column="45" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/barang/search.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="36" lean-forward="true" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        <state relative-caret-position="504">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BarangController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="161" column="16" lean-forward="true" selection-start-line="161" selection-start-column="16" selection-end-line="161" selection-end-column="16" />
+          <folding>
+            <element signature="e#40#76#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RuanganController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1054">
+          <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/ruangan/search.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
         </state>
       </provider>
     </entry>
