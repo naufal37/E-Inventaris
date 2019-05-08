@@ -44,7 +44,7 @@
                     </table>
                 </div>
                 {{$list_ruangan->links()}}
-                <a href="{{url('barang/create')}}" class="btn btn-success">Tambahkan Ruangan</a>
+                <a href="{{url('ruangan/create')}}" class="btn btn-success">Tambahkan Ruangan</a>
             </div>
         @else
             <div class="col-12 mb-4">
@@ -60,6 +60,4 @@
             </div>
         @endif
     </div>
-
-
 @stop
