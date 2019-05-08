@@ -1,20 +1,41 @@
 @if(isset($satuan))
-    {!! Form::hidden('id', $satuan->id) !!}
+    <input type="hidden" name="id" value="{{$satuan->id}}">
 @endif
-
 <div class="form-group">
-    {!! Form::label('satuan','Satuan',['class'=>'control-label']) !!}
+    <label>Satuan Barang</label>
     @if($errors->any())
         @if($errors->has('satuan'))
-            {!! Form::text('satuan',null,['class'=>'form-control is-invalid']) !!}
-            <span class="help-block">{{$errors->first('satuan')}}</span>
+            <input type="text" class="form-control is-invalid" name="satuan" id="satuan"
+                   value="{{!empty($satuan)?$satuan->satuan:null}}" required="">
+            <div class="invalid-feedback">
+                {{$errors->first('satuan')}}
+            </div>
         @else
-            {!! Form::text('satuan',null,['class'=>'form-control is-valid']) !!}
+            <input type="text" class="form-control is-valid" name="satuan" id="satuan"
+                   value="{{!empty($satuan)?$satuan->satuan:null}}" required="">
+            <div class="valid-feedback">
+            </div>
         @endif
     @else
-        {!! Form::text('satuan',null,['class'=>'form-control']) !!}
+        <input type="text" class="form-control" value="{{!empty($satuan)?$satuan->satuan:null}}" required=""
+               name="satuan" id="satuan">
     @endif
-<div class="form-group">
-    {!! Form::submit($button,['class'=>'btn btn-primary form-control']) !!}
 </div>
+
+{{--<div class="form-group">--}}
+{{--    {!! Form::label('satuan','Satuan',['class'=>'control-label']) !!}--}}
+{{--    @if($errors->any())--}}
+{{--        @if($errors->has('satuan'))--}}
+{{--            {!! Form::text('satuan',null,['class'=>'form-control is-invalid']) !!}--}}
+{{--            <span class="help-block">{{$errors->first('satuan')}}</span>--}}
+{{--        @else--}}
+{{--            {!! Form::text('satuan',null,['class'=>'form-control is-valid']) !!}--}}
+{{--        @endif--}}
+{{--    @else--}}
+{{--        {!! Form::text('satuan',null,['class'=>'form-control']) !!}--}}
+{{--    @endif--}}
+
+{{--</div>--}}
+<div class="form-group">
+    <button type="submit" class="btn btn-icon icon-left btn-success"><i class="fas fa-check"></i>{{$button}}</button>
 </div>
