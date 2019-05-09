@@ -109,8 +109,9 @@
                         </li>
                         <!--            End Data-->
                         <li class="menu-header">Peminjaman/Pengembalian</li>
-                        <li><a class="nav-link" href="{{url('pinjaman')}}"><i class="fas fa-file-export"></i><span>Pinjam Barang</span></a></li>
-{{--                        <li><a class="nav-link" href="blank.html"><i class="fas fa-file-import"></i> <span>Pengembalian Barang</span></a></li>--}}
+                        <li><a class="nav-link" href="{{url('pinjaman')}}"><i class="fas fa-file-export"></i><span>Pinjam Barang</span></a>
+                        </li>
+                        {{--                        <li><a class="nav-link" href="blank.html"><i class="fas fa-file-import"></i> <span>Pengembalian Barang</span></a></li>--}}
 
                         <li class="menu-header">Lain Lain</li>
                         <li><a class="nav-link" href="{{url('pengguna')}}"><i class="fas fa-user"></i> <span>User</span></a>

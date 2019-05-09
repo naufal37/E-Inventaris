@@ -52,17 +52,15 @@
 <body>
 <div id="app">
     <div class="main-wrapper main-wrapper-1">
-    @include('navbars2')
+        @include('navbars2')
     <!-- Main Content -->
         <div class="main-content">
             <section class="section">
                 <div class="section-header">
                     <h1>Blank Page</h1>
                 </div>
-
                 <div class="section-body">
                     @yield('main')
-
                 </div>
             </section>
         </div>
