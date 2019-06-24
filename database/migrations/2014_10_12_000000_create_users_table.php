@@ -28,7 +28,7 @@ class CreateUsersTable extends Migration
 
         });
         Schema::table('users', function (Blueprint $table) {
-            DB::table('users')->insert(['id'=>null,'name'=>'admin','email'=>'admin@gmail.com','email_verified_at'=>null,'password'=>bcrypt('admin'),'remember_token'=>null,'level'=>'admin','created_at'=>null,'updated_at'=>null]);
+            DB::table('users')->insert(['id'=>null,'name'=>'admin','email'=>'admin','email_verified_at'=>null,'password'=>bcrypt('admin'),'remember_token'=>null,'level'=>'admin','created_at'=>null,'updated_at'=>null]);
 
         });
 

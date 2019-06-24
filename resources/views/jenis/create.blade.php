@@ -1,14 +1,10 @@
 @extends('template')
 @section('main')
-    <div id="ruangan">
+    <div id="jenis">
         <h2>Tambah Jenis Barang</h2>
-        {!! Form::open(['url'=>'jenis']) !!}
-            @include('jenis.form',['button'=>'Tambah Ruangan'])
-        {!! Form::close() !!}
-    </div>
-@stop
-@section('footer')
-    <div id="footer">
-        <p>&copy; 2019 E-Inventaris</p>
+        <form method="POST" action="{{route('jenis.store')}}">
+            @csrf
+            @include('jenis.form',['button'=>'Tambah Jenis Barang'])
+        </form>
     </div>
 @stop

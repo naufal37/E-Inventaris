@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>{{$halaman}} &mdash; Stisla</title>
+    <title>{{ucfirst($halaman)}} &mdash; E-Inventaris</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="{{URL::asset('assets/modules/bootstrap/css/bootstrap.min.css')}}">
@@ -15,12 +15,10 @@
     <!-- CSS Libraries -->
     {{--  Form--}}
     <link rel="stylesheet" href="{{URL::asset('assets/modules/bootstrap-daterangepicker/daterangepicker.css')}}">
-    <link rel="stylesheet"
-          href="{{URL::asset('assets/modules/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('assets/modules/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css')}}">
     <link rel="stylesheet" href="{{URL::asset('assets/modules/select2/dist/css/select2.min.css')}}">
     <link rel="stylesheet" href="{{URL::asset('assets/modules/jquery-selectric/selectric.css')}}">
-    <link rel="stylesheet"
-          href="{{URL::asset('assets/modules/bootstrap-timepicker/css/bootstrap-timepicker.min.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('assets/modules/bootstrap-timepicker/css/bootstrap-timepicker.min.css')}}">
     <link rel="stylesheet" href="{{URL::asset('assets/modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.css')}}">
 
 {{--Form End--}}
@@ -52,7 +50,7 @@
 <body>
 <div id="app">
     <div class="main-wrapper main-wrapper-1">
-    @include('navbars2')
+    @include('navbars')
     <!-- Main Content -->
         <div class="main-content">
             <section class="section">

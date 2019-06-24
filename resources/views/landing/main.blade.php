@@ -208,8 +208,6 @@
                 <div class="row">
                     <div class="col-md-12 animated text-center" data-animation="fadeInUp" data-animation-delay="300">
                         <button type="button" class="btn bg-inverse btn-lg" data-loading-text="Loading..." onclick="window.location.href='{{url('/login')}}'">Masuk</button>
-                        {{--<a href="{{url('/masuk')}}" class="btn bg-inverse btn-lg" data-loading-text="Loading...">Login</a>--}}
-
                     </div>
                 </div>
                 <!-- Subscribe Row Ends -->

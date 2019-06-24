@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="Inventaris" uuid="56237b42-be99-40c6-974e-27ae68b2e780">
+    <data-source source="LOCAL" name="E-Inventaris" uuid="e571065d-67fe-4d42-8988-549a153e97bd">
       <driver-ref>mariadb</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
