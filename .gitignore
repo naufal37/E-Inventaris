@@ -8,6 +8,7 @@
 
 # User-specific stuff
 .idea/**/workspace.xml
+.idea/workspace.xml
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
@@ -112,5 +113,6 @@ $RECYCLE.BIN/
 #Laravel Assets
 public/assets
 stisla-2.2.0
+storage/framework/views
 
 # End of https://www.gitignore.io/api/windows,phpstorm

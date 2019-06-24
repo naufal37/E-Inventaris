@@ -1,5 +1,5 @@
 @if(isset($barang))
-    {!! Form::hidden('id', $barang->id) !!}
+    <input type="hidden" value="{{$barang->id}}" name="id">
 @endif
 
 <div class="form-group">

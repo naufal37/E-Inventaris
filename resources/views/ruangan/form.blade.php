@@ -1,153 +1,110 @@
 @if(isset($ruangan))
-    {!! Form::hidden('id', $ruangan->id) !!}
+    <input type="hidden" value="{{$ruangan->id}}" name="id">
 @endif
+
 <div class="form-group">
-    {!! Form::label('nama_ruangan','Nama Ruangan',['class'=>'control-label']) !!}
+    <label>Nama Ruangan</label>
     @if($errors->any())
         @if($errors->has('nama_ruangan'))
-            {!! Form::text('nama_ruangan',null,['class'=>'form-control is-invalid']) !!}
-            <span class="help-block">{{$errors->first('nama_ruangan')}}</span>
+            <input type="text" class="form-control is-invalid" name="nama_ruangan" id="nama_ruangan" value="{{!empty($ruangan)?$ruangan->nama_ruangan:null}}" required="">
+            <div class="invalid-feedback">
+                {{$errors->first('nama_ruangan')}}
+            </div>
         @else
-            {!! Form::text('nama_ruangan',null,['class'=>'form-control is-valid']) !!}
+            <input type="text" class="form-control is-valid" name="nama_ruangan" id="nama_ruangan"
+                   value="{{!empty($ruangan)?$ruangan->nama_ruangan:null}}">
+            <div class="valid-feedback">
+            </div>
         @endif
     @else
-        {!! Form::text('nama_ruangan',null,['class'=>'form-control']) !!}
+        <input type="text" class="form-control" value="{{!empty($ruangan)?$ruangan->nama_ruangan:null}}"
+               name="nama_ruangan" id="nama_ruangan">
     @endif
-
-
-{{--    @if($errors->any())--}}
-{{--        @if($errors->has('nama_ruangan'))--}}
-{{--        {!! Form::text('nama_ruangan',null,['class'=>'form-control is-invalid']) !!}--}}
-{{--        <span class="help-block">{{$errors->first('nama_ruangan')}}</span>--}}
-{{--        @else--}}
-{{--            {!! Form::text('nama_ruangan',null,['class'=>'form-control is-valid']) !!}--}}
-{{--        @endif--}}
-{{--    @else--}}
-{{--        {!! Form::text('nama_ruangan',null,['class'=>'form-control']) !!}--}}
-{{--    @endif--}}
 </div>
 
 <div class="form-group">
-    {!! Form::label('kode_ruangan','Kode Ruangan',['class'=>'control-label']) !!}
+    <label>Kode Ruangan</label>
     @if($errors->any())
         @if($errors->has('kode_ruangan'))
-            {!! Form::text('kode_ruangan',null,['class'=>'form-control is-invalid']) !!}
-            <span class="help-block">{{$errors->first('kode_ruangan')}}</span>
+            <input type="text" class="form-control is-invalid" name="kode_ruangan" id="kode_ruangan" value="{{!empty($ruangan)?$ruangan->kode_ruangan:null}}">
+            <div class="invalid-feedback">
+                {{$errors->first('kode_ruangan')}}
+            </div>
         @else
-            {!! Form::text('kode_ruangan',null,['class'=>'form-control is-valid']) !!}
+            <input type="text" class="form-control is-valid" name="kode_ruangan" id="kode_ruangan"
+                   value="{{!empty($ruangan)?$ruangan->kode_ruangan:null}}">
+            <div class="valid-feedback">
+            </div>
         @endif
     @else
-        {!! Form::text('kode_ruangan',null,['class'=>'form-control']) !!}
+        <input type="text" class="form-control" value="{{!empty($ruangan)?$ruangan->kode_ruangan:null}}"
+               name="kode_ruangan" id="kode_ruangan">
     @endif
 </div>
 
 <div class="form-group">
-    {!! Form::label('lokasi','Lokasi Ruangan',['class'=>'control-label']) !!}
+    <label>Lokasi</label>
     @if($errors->any())
         @if($errors->has('lokasi'))
-{{--            {!! Form::text('lokasi',null,['class'=>'form-control is-invalid']) !!}--}}
-            {!! Form::select('lokasi',['Kampus Depan'=>'Kampus Depan','Kampus Belakang'=>'Kampus Belakang'],null,['class'=>'form-control is-invalid','id'=>'jenis_barang','placeholder'=>'Pilih Lokasi Ruangan']) !!}
-            <span class="help-block">{{$errors->first('lokasi')}}</span>
+            <select name="lokasi" id="lokasi" class="form-control selectric is-invalid">
+                    @if(!empty($ruangan))
+                        <option {{$ruangan->lokasi=="Kampus Belakang" ? 'selected':''}} value="Kampus Belakang">Kampus Belakang</option>
+                        <option {{$ruangan->lokasi=="Kampus Depan" ? 'selected':''}} value="Kampus Depan">Kampus Depan</option>
+                    @else
+                        <option value="Kampus Depan">Kampus Depan</option>
+                        <option value="Kampus Belakang">Kampus Belakang</option>
+                    @endif
+            </select>
+            <div class="invalid-feedback">
+                {{$errors->first('lokasi')}}
+            </div>
         @else
-{{--            {!! Form::text('lokasi',null,['class'=>'form-control is-valid']) !!}--}}
-            {!! Form::select('lokasi',['Kampus Depan'=>'Kampus Depan','Kampus Belakang'=>'Kampus Belakang'],null,['class'=>'form-control is-valid','id'=>'jenis_barang','placeholder'=>'Pilih Lokasi Ruangan']) !!}
+            <select name="lokasi" id="lokasi" class="form-control selectric is-valid">
+                @if(!empty($ruangan))
+                    <option {{$ruangan->lokasi=="Kampus Belakang" ? 'selected':''}} value="Kampus Belakang">Kampus Belakang</option>
+                    <option {{$ruangan->lokasi=="Kampus Depan" ? 'selected':''}} value="Kampus Depan">Kampus Depan</option>
+                @else
+                    <option value="Kampus Depan">Kampus Depan</option>
+                    <option value="Kampus Belakang">Kampus Belakang</option>
+                @endif
+            </select>
+            <div class="valid-feedback">
+            </div>
         @endif
     @else
-{{--        {!! Form::text('lokasi',null,['class'=>'form-control']) !!}--}}
-        {!! Form::select('lokasi',['Kampus Depan'=>'Kampus Depan','Kampus Belakang'=>'Kampus Belakang'],null,['class'=>'form-control','id'=>'jenis_barang','placeholder'=>'Pilih Lokasi Ruangan']) !!}
-
+        <select name="lokasi" id="lokasi" class="form-control selectric">
+            @if(!empty($ruangan))
+                <option {{$ruangan->lokasi=="Kampus Belakang" ? 'selected':''}} value="Kampus Belakang">Kampus Belakang</option>
+                <option {{$ruangan->lokasi=="Kampus Depan" ? 'selected':''}} value="Kampus Depan">Kampus Depan</option>
+            @else
+                <option value="Kampus Depan">Kampus Depan</option>
+                <option value="Kampus Belakang">Kampus Belakang</option>
+            @endif
+        </select>
     @endif
 </div>
 
 <div class="form-group">
-    {!! Form::label('petugas','Petugas Ruangan',['class'=>'control-label']) !!}
+    <label>Petugas Ruangan</label>
     @if($errors->any())
         @if($errors->has('petugas_ruangan'))
-            {!! Form::text('petugas_ruangan',null,['class'=>'form-control is-invalid']) !!}
-            <span class="help-block">{{$errors->first('petugas_ruangan')}}</span>
+            <input type="text" class="form-control is-invalid" name="petugas_ruangan" id="petugas_ruangan" value="{{!empty($ruangan)?$ruangan->petugas_ruangan:null}}">
+            <div class="invalid-feedback">
+                {{$errors->first('petugas_ruangan')}}
+            </div>
         @else
-            {!! Form::text('petugas_ruangan',null,['class'=>'form-control is-valid']) !!}
+            <input type="text" class="form-control is-valid" name="petugas_ruangan" id="petugas_ruangan"
+                   value="{{!empty($ruangan)?$ruangan->petugas_ruangan:null}}">
+            <div class="valid-feedback">
+            </div>
         @endif
     @else
-        {!! Form::text('petugas_ruangan',null,['class'=>'form-control']) !!}
+        <input type="text" class="form-control" value="{{!empty($ruangan)?$ruangan->petugas_ruangan:null}}"
+               name="petugas_ruangan" id="petugas_ruangan">
     @endif
 </div>
 
 
-
-{{--<div class="form-group">--}}
-{{--    {!! Form::label('statusbarang','Status Barang',['class'=>'control-label']) !!}--}}
-{{--    <div class="radio">--}}
-{{--        <label>{!! Form::radio('kondisi_barang','Tersedia',true) !!} Tersedia </label>--}}
-{{--    </div>--}}
-{{--    <div class="radio">--}}
-{{--        <label>{!! Form::radio('kondisi_barang','Rusak') !!} Rusak </label>--}}
-{{--    </div>--}}
-{{--    <div class="radio">--}}
-{{--        <label>{!! Form::radio('kondisi_barang','Hilang') !!} Hilang </label>--}}
-{{--    </div>--}}
-{{--</div>--}}
-
-{{--<div class="form-group">--}}
-{{--    <label for="jumlah" class="control-label">Jumlah Barang</label>--}}
-{{--    @if ($errors->any())--}}
-{{--        @if($errors->has('jumlah'))--}}
-{{--            {!! Form::number('jumlah',null,['class'=>'form-control is-invalid']) !!}--}}
-{{--            <span class="help-block">{{$errors->first('jumlah')}}</span>--}}
-{{--        @else--}}
-{{--            {!! Form::number('jumlah',null,['class'=>'form-control is-valid']) !!}--}}
-{{--        @endif--}}
-{{--    @else--}}
-{{--        {!! Form::number('jumlah',null,['class'=>'form-control']) !!}--}}
-{{--    @endif--}}
-{{--</div>--}}
-
-{{--<div class="form-group">--}}
-{{--    <label for="kodebarang" class="control-label">Kode Barang</label>--}}
-{{--    @if($errors->has('kode_barang'))--}}
-{{--        {!! Form::text('kode_barang',null,['class'=>'form-control is-invalid']) !!}--}}
-{{--        <span class="help-block">{{$errors->first('kode_barang')}}</span>--}}
-{{--    @else--}}
-{{--        {!! Form::text('kode_barang',null,['class'=>'form-control']) !!}--}}
-{{--    @endif--}}
-{{--</div>--}}
-
-{{--<div class="form-group">--}}
-{{--    <label for="satuanbarang" class="control-label">Satuan Barang</label>--}}
-{{--    {!! Form::select('satuan', ['kg' => 'KG', 'buah' => 'Buah', 'liter' => 'Liter']); !!}--}}
-{{--</div>--}}
-
-{{--tak berisi--}}
-{{--<div class="form-group">--}}
-{{--    <label for="ruangan" class="control-label">Ruangan</label>--}}
-{{--    {!! Form::select('barang', ['GDN' => 'Gudang 1', 'RPL' => 'Kajur RPL', 'TGB' => 'Kajur TGB']); !!}--}}
-{{--</div>--}}
-{{--tak berisi--}}
-
-{{--<div class="form-group">--}}
-{{--    <label for="jenis" class="control-label">Jenis Barang</label>--}}
-{{--    {!! Form::select('jenis', ['proyektor' => 'Proyektor', 'laptop' => 'Laptop', 'gelas' => 'Gelas']); !!}--}}
-{{--</div>--}}
-
-{{--<div class="form-group">--}}
-{{--    {!! Form::label('tanggal_masuk','Tanggal Masuk',['class'=>'control-label']) !!}--}}
-{{--    @if ($errors->any())--}}
-{{--        @if($errors->has('tanggal_masuk'))--}}
-{{--            {!! Form::date('tanggal_masuk',!empty($barang) ? $barang->tanggal_masuk->format('Y-m-d'): null,['class'=>'form-control is-invalid','id'=>'tanggal_masuk']) !!}--}}
-{{--            <span class="help-block">{{$errors->first('tanggal_masuk')}}</span>--}}
-{{--    @else--}}
-{{--        {!! Form::date('tanggal_masuk',!empty($barang) ? $barang->tanggal_masuk->format('Y-m-d'): null,['class'=>'form-control is-valid','id'=>'tanggal_masuk']) !!}--}}
-{{--    @endif--}}
-
-{{--    @else--}}
-{{--        {!! Form::date('tanggal_masuk',!empty($barang) ? $barang->tanggal_masuk->format('Y-m-d'): null,['class'=>'form-control','id'=>'tanggal_masuk']) !!}--}}
-{{--    @endif--}}
-{{--</div>--}}
-{{--<div class="form-group">--}}
-{{--    {!! Form::label('keterangan','Keterangan',['class'=>'control-label']) !!}--}}
-{{--    {!! Form::text('keterangan',null,['class'=>'form-control']) !!}--}}
-{{--</div>--}}
-
 <div class="form-group">
-    {!! Form::submit($button,['class'=>'btn btn-primary form-control']) !!}
+    <button type="submit" class="btn btn-icon icon-left btn-success"><i class="fas fa-check"></i>{{$button}}</button>
 </div>

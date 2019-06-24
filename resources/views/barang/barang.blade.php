@@ -66,8 +66,7 @@
                     <h2>Data Barang Tidak Ada</h2>
                     <p class="lead">Sistem Tidak Menemukan Barang Apapun,Silahkan Tambahkan Barang.</p>
                     <div class="mt-4">
-                        <a href="{{url('barang/create')}}" class="btn btn-outline-white btn-lg btn-icon icon-left"><i
-                                    class="far fa-user"></i> Tambah Barang</a>
+                        <a href="{{url('barang/create')}}" class="btn btn-outline-white btn-lg btn-icon icon-left"><i class="far fa-user"></i> Tambah Barang</a>
                     </div>
                 </div>
             </div>
